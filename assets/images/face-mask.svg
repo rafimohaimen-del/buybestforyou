@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="redGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F43F5E" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#881337" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="600" height="400" fill="#1E1B4B" />
+  <circle cx="300" cy="200" r="150" fill="url(#redGlow)" />
+  <g transform="translate(220, 80)">
+    <!-- Mask Shape -->
+    <path d="M 80 40 C 20 40, 20 160, 40 200 C 60 240, 100 250, 120 250 C 140 250, 180 240, 200 200 C 220 160, 220 40, 160 40 Z" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="4"/>
+    <!-- Eye Openings -->
+    <ellipse cx="75" cy="110" rx="18" ry="10" fill="#1E1B4B" />
+    <ellipse cx="165" cy="110" rx="18" ry="10" fill="#1E1B4B" />
+    <!-- Nose Contour -->
+    <path d="M 115 130 L 120 155 L 125 155" stroke="#CBD5E1" stroke-width="3" fill="none"/>
+    <!-- Mouth Slit -->
+    <rect x="100" y="190" width="40" height="8" rx="4" fill="#1E1B4B" />
+    <!-- LED Matrix Grid Points -->
+    <circle cx="70" cy="70" r="3" fill="#EF4444" />
+    <circle cx="95" cy="65" r="3" fill="#EF4444" />
+    <circle cx="120" cy="65" r="3" fill="#EF4444" />
+    <circle cx="145" cy="65" r="3" fill="#EF4444" />
+    <circle cx="170" cy="70" r="3" fill="#EF4444" />
+    <circle cx="60" cy="150" r="3" fill="#EF4444" />
+    <circle cx="85" cy="155" r="3" fill="#EF4444" />
+    <circle cx="155" cy="155" r="3" fill="#EF4444" />
+    <circle cx="180" cy="150" r="3" fill="#EF4444" />
+  </g>
+</svg>

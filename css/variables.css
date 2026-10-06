@@ -1,0 +1,143 @@
+/* ==========================================================================
+   BuyBestForYou — Design Tokens & Foundations
+   Strictly matched with '0 · Foundations (delta from design system).png'
+   ========================================================================== */
+
+:root {
+  /* --- Colour Deltas & Brand Colors --- */
+  --color-cta-deep: #B84A14;            /* Primary CTA button fills (5.21:1 on white) */
+  --color-cta-hover: #9E3E0F;           /* Subtle dark hover */
+  --color-muted: #5B6470;               /* Secondary text (6.0:1 on white) */
+  --color-trust: #2B5D7C;               /* Links, disclosure anchor */
+  --color-trust-hover: #1E4359;         /* Dark hover for links */
+  --color-on-ink: #B4BBC4;              /* Secondary text on dark/footer bands */
+  
+  --color-positive-text: #007A58;       /* Pros glyph / positive highlights */
+  --color-positive-bg: #E8F2EB;         /* Pros pill & card tint */
+  --color-negative-text: #B34E00;       /* Cons glyph / negative highlights */
+  --color-negative-bg: #FDF1EA;         /* Cons pill & card tint */
+  
+  --color-ink: #111827;                 /* Headings & dark text */
+  --color-ink-rgb: 17, 24, 39;
+  --color-body: #1F2937;                /* Body copy */
+  --color-bg-page: #FFFFFF;
+  --color-bg-subtle: #F9FAFB;
+  --color-bg-card: #FFFFFF;
+  --color-border: #E5E7EB;
+  --color-border-dark: #374151;
+  --color-dark-surface: #111827;        /* Header background */
+  --color-footer-bg: #141820;           /* Footer background */
+
+  /* --- Category Tints & Indicator Dots --- */
+  /* Category colors are used only as dots or icon fills. Text on tints stays ink. */
+  --cat-auto-bg: #F4EDE7;
+  --cat-auto-dot: #7A4E2D;
+  --cat-electronics-bg: #E9F1F8;
+  --cat-electronics-dot: #2E6FA3;
+  --cat-home-bg: #E8F2EB;
+  --cat-home-dot: #3A8452;
+  --cat-health-bg: #F8E9EE;
+  --cat-health-dot: #B23A5C;
+  --cat-trust-bg: #E6EFF4;
+  --cat-trust-dot: #2B5D7C;
+
+  /* --- Radius Scale --- */
+  --radius-sm: 14px;                    /* Inputs, small cards */
+  --radius-md: 16px;                    /* Standard cards */
+  --radius-lg: 20px;                    /* Feature cards */
+  --radius-pill: 999px;                 /* Pills, buttons */
+
+  /* --- Typography Scale & Weights --- */
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  --font-display-size: clamp(2.25rem, 5vw, 3.5rem); /* Display 56px (scalable down on mobile) */
+  --font-display-lh: 1.12;
+  --font-display-weight: 800;
+
+  --font-heading-size: clamp(1.75rem, 3.5vw, 2.5rem); /* Heading 40px */
+  --font-heading-lh: 1.2;
+  --font-heading-weight: 800;
+
+  --font-subheading-size: clamp(1.25rem, 2.5vw, 1.5rem); /* Subheading 24px */
+  --font-subheading-lh: 1.3;
+  --font-subheading-weight: 700;
+
+  --font-h3-size: 1.25rem;             /* H3 20px */
+  --font-h3-lh: 1.35;
+  --font-h3-weight: 700;
+
+  --font-body-lg-size: 1.125rem;        /* Body large 18px */
+  --font-body-lg-lh: 1.6;               /* 28px */
+
+  --font-body-size: 1rem;               /* Body 16px */
+  --font-body-lh: 1.5;                  /* 24px */
+
+  --font-caption-size: 0.875rem;        /* Caption 14px */
+  --font-caption-lh: 1.43;              /* 20px */
+
+  /* --- Shadows & Elevations --- */
+  --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03);
+  --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
+  --shadow-feature: 0 10px 25px -5px rgba(0, 0, 0, 0.07), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
+  --shadow-input-focus: 0 0 0 3px rgba(184, 74, 20, 0.18);
+
+  /* --- Layout & Spacing --- */
+  --container-max: 1200px;
+  --container-pad: 1.25rem;
+  --transition-speed: 0.2s;
+  --transition-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* --- Base Reset & Box Sizing --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-body-size);
+  line-height: var(--font-body-lh);
+  color: var(--color-body);
+  background-color: var(--color-bg-page);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--color-trust);
+  text-decoration: none;
+  transition: color var(--transition-speed) ease;
+}
+
+a:hover {
+  color: var(--color-trust-hover);
+}
+
+input, button, textarea, select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+ul, ol {
+  list-style: none;
+}

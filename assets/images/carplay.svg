@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="dashBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="screenGloss" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E1E24" />
+      <stop offset="100%" stop-color="#2D3748" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#dashBg)" />
+  <!-- Dashboard Trim -->
+  <path d="M 0 320 Q 300 280 600 320 L 600 400 L 0 400 Z" fill="#0B0F19" />
+  <!-- Tablet Display Mount -->
+  <rect x="130" y="70" width="340" height="230" rx="18" fill="#334155" stroke="#475569" stroke-width="4" />
+  <rect x="142" y="82" width="316" height="206" rx="10" fill="url(#screenGloss)" />
+  <!-- UI Icons / CarPlay interface -->
+  <g transform="translate(160, 100)">
+    <!-- App icon grid -->
+    <rect x="20" y="20" width="46" height="46" rx="12" fill="#10B981" />
+    <path d="M 36 34 L 50 48 M 50 34 L 36 48" stroke="#FFF" stroke-width="3" stroke-linecap="round"/>
+    
+    <rect x="85" y="20" width="46" height="46" rx="12" fill="#3B82F6" />
+    <circle cx="108" cy="43" r="12" fill="none" stroke="#FFF" stroke-width="3"/>
+    
+    <rect x="150" y="20" width="46" height="46" rx="12" fill="#F43F5E" />
+    <circle cx="173" cy="43" r="8" fill="#FFF"/>
+
+    <rect x="215" y="20" width="46" height="46" rx="12" fill="#EAB308" />
+
+    <!-- Now Playing Mini Widget -->
+    <rect x="20" y="85" width="240" height="70" rx="12" fill="#0F172A" stroke="#334155" stroke-width="1.5" />
+    <rect x="32" y="97" width="46" height="46" rx="6" fill="#8B5CF6" />
+    <rect x="90" y="105" width="110" height="10" rx="3" fill="#E2E8F0" />
+    <rect x="90" y="123" width="70" height="8" rx="2" fill="#64748B" />
+  </g>
+</svg>

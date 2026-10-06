@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BuyBestForYou — Real Research. Straight Answers. No Fluff.</title>
+  <meta name="description" content="Composite ratings, verified buyer data, and expert lab/press coverage compared side-by-side across Automotive, Electronics, Home Appliances, and Health.">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- ==================== SHARED HEADER ==================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="BuyBestForYou Home">
+        <svg class="brand-logo-icon" viewBox="0 0 32 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="2" y="4" width="22" height="16" rx="4"></rect>
+          <path d="M24 9L29 6V18L24 15"></path>
+          <circle cx="9" cy="12" r="2.5"></circle>
+          <line x1="14" y1="12" x2="19" y2="12"></line>
+        </svg>
+        <span>buybestforyou</span>
+      </a>
+
+      <!-- Pure CSS Mobile Toggle (Checkbox Hack) -->
+      <input type="checkbox" id="nav-toggle" class="menu-toggle-checkbox" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="menu-toggle-label" aria-label="Open menu">
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+      </label>
+
+      <!-- Navigation Links -->
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="category.html" class="nav-link">
+              Automotive
+              <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 1L5 5L9 1"/></svg>
+            </a>
+            <div class="dropdown-menu">
+              <a href="category.html" class="dropdown-link">Automotive Parts & Accessories</a>
+              <a href="category.html" class="dropdown-link">Car Electronics & GPS</a>
+              <a href="category.html" class="dropdown-link">Driving Accessories</a>
+              <a href="review-roundup.html" class="dropdown-link">Best Robot Lawn Mowers</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="category.html" class="nav-link">
+              Electronics
+              <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 1L5 5L9 1"/></svg>
+            </a>
+            <div class="dropdown-menu">
+              <a href="category.html" class="dropdown-link">Headphones & Audio</a>
+              <a href="category.html" class="dropdown-link">Projectors & Displays</a>
+              <a href="category.html" class="dropdown-link">Dash Cams & Cameras</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="category.html" class="nav-link">
+              Home Appliances
+              <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 1L5 5L9 1"/></svg>
+            </a>
+            <div class="dropdown-menu">
+              <a href="category.html" class="dropdown-link">Kitchen Tools & Cookers</a>
+              <a href="category.html" class="dropdown-link">Vacuum Cleaners</a>
+              <a href="category.html" class="dropdown-link">Lawn & Garden Care</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="category.html" class="nav-link">Health and Fitness</a>
+          </li>
+          <li class="nav-item">
+            <a href="blog.html" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="404.html" class="search-trigger-btn" aria-label="Search articles and reviews">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+            <circle cx="11" cy="11" r="7"></circle>
+            <line x1="21" y1="21" x2="16.5" y2="16.5"></line>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== DISCLOSURE BAR ==================== -->
+  <aside class="disclosure-bar" aria-label="Affiliate disclosure banner">
+    <div class="container disclosure-inner">
+      <svg class="disclosure-icon" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+      </svg>
+      <span class="disclosure-text">
+        As an Amazon Associate we earn from qualifying purchases. Rankings are never for sale.
+        <a href="disclosure.html" class="disclosure-link">How we make money</a>
+      </span>
+    </div>
+  </aside>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section class="hero-home">
+      <div class="container hero-grid">
+        <div class="hero-intro">
+          <div class="cat-pill cat-electronics" style="margin-bottom: 1.25rem;">
+            <span class="cat-dot"></span>
+            Independent buying guides · refreshed weekly
+          </div>
+          <h1 class="hero-title">Real research.<br>Straight answers.<br>No fluff.</h1>
+          <p class="hero-lead">
+            Composite ratings, verified buyer data, and expert lab/press coverage, compared side by side across Automotive, Electronics, Home Appliances, and Health and Fitness.
+          </p>
+
+          <form action="404.html" method="get" class="hero-search-area">
+            <div class="search-bar-unified">
+              <input type="text" class="search-bar-input" placeholder="What are you shopping for? e.g. paint pen" aria-label="Search reviews and guides">
+              <button type="submit" class="search-bar-btn">Search</button>
+            </div>
+          </form>
+
+          <div class="popular-tags">
+            <span>Popular:</span>
+            <a href="product-single.html" class="popular-tag">Paint pens</a>
+            <a href="category.html" class="popular-tag">Dash cams</a>
+            <a href="review-roundup.html" class="popular-tag">Robot vacuums</a>
+            <a href="category.html" class="popular-tag">Adjustable dumbbells</a>
+          </div>
+        </div>
+
+        <!-- HERO FEATURED PRODUCT CARD -->
+        <div class="hero-featured-wrap">
+          <div class="hero-featured-card">
+            <div class="hero-featured-image">
+              <span class="badge badge-editor hero-featured-tag">Editor's pick</span>
+              <img src="assets/images/paint-pen.svg" alt="Paint Pen for Automotive kit" width="500" height="312" loading="eager">
+            </div>
+            <div class="cat-pill cat-auto" style="margin-bottom: 0.5rem;">
+              <span class="cat-dot"></span>
+              Automotive Parts & Accessories
+            </div>
+            <h2 class="hero-featured-title">Paint Pen for Automotive</h2>
+            <p class="hero-featured-desc">
+              Our pick for restoring light scratches and chips on a vehicle's exterior. Easy to apply, but check your paint code before you order.
+            </p>
+            <div class="hero-featured-score-row">
+              <div class="score-badge-circle">4.7</div>
+              <div>
+                <div class="score-meta-title">Composite score</div>
+                <div class="score-meta-sub">Buyer ratings + spec match + expert coverage</div>
+              </div>
+            </div>
+            <a href="product-single.html" class="btn btn-primary btn-full">Check price on Amazon</a>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 0.5rem;">
+              <span class="affiliate-note" style="margin-top:0;">Affiliate link · we may earn a commission</span>
+              <a href="product-single.html" style="font-size: 0.8125rem; font-weight: 700; color: var(--color-ink);">Read the review</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST POINTS BAR -->
+    <section class="trust-bar" aria-label="Core editorial principles">
+      <div class="container trust-grid">
+        <div class="trust-item">
+          <svg class="trust-item-icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+          </svg>
+          <div>
+            <h4>Research-led product selection</h4>
+            <p>Specs, buyer ratings and expert coverage, side by side.</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <svg class="trust-item-icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+          </svg>
+          <div>
+            <h4>Clear strengths and limitations</h4>
+            <p>Every pick shows what it does well and where it falls short.</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <svg class="trust-item-icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+          </svg>
+          <div>
+            <h4>Matched to real use cases</h4>
+            <p>Recommendations fit different users and budgets.</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <svg class="trust-item-icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+          </svg>
+          <div>
+            <h4>Reviewed as products change</h4>
+            <p>Pages are dated and refreshed when the facts move.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BROWSE CATEGORIES -->
+    <section class="section">
+      <div class="container">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 1rem;">
+          <div>
+            <span style="font-size: 0.75rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-muted);">Browse</span>
+            <h2 style="font-size: 2rem; font-weight: 800; color: var(--color-ink);">Start with what you need</h2>
+          </div>
+          <a href="category.html" style="font-size: 0.875rem; font-weight: 700; color: var(--color-trust);">All categories →</a>
+        </div>
+
+        <div class="category-browser-grid">
+          <!-- Automotive -->
+          <div class="cat-browse-card">
+            <div class="cat-browse-img">
+              <img src="assets/images/cat-automotive.svg" alt="Automotive category cover" width="300" height="190" loading="lazy">
+            </div>
+            <div class="cat-browse-title">
+              <span class="cat-dot" style="background-color: var(--cat-auto-dot);"></span>
+              Automotive
+            </div>
+            <p class="cat-browse-desc">Car accessories, GPS units, and driving essentials, compared for everyday use.</p>
+            <div class="cat-browse-stats">5 reviews · Most searched: Dash Cams</div>
+            <a href="category.html" class="cat-browse-link">View category →</a>
+          </div>
+
+          <!-- Home Appliances -->
+          <div class="cat-browse-card">
+            <div class="cat-browse-img">
+              <img src="assets/images/cat-home.svg" alt="Home appliances cover" width="300" height="190" loading="lazy">
+            </div>
+            <div class="cat-browse-title">
+              <span class="cat-dot" style="background-color: var(--cat-home-dot);"></span>
+              Home Appliances
+            </div>
+            <p class="cat-browse-desc">Kitchen tools, vacuums, and household equipment, evaluated for reliability and value.</p>
+            <div class="cat-browse-stats">103 reviews · Most searched: Robot Vacuums</div>
+            <a href="category.html" class="cat-browse-link">View category →</a>
+          </div>
+
+          <!-- Electronics -->
+          <div class="cat-browse-card">
+            <div class="cat-browse-img">
+              <img src="assets/images/cat-electronics.svg" alt="Electronics category cover" width="300" height="190" loading="lazy">
+            </div>
+            <div class="cat-browse-title">
+              <span class="cat-dot" style="background-color: var(--cat-electronics-dot);"></span>
+              Electronics
+            </div>
+            <p class="cat-browse-desc">Headphones, projectors, and everyday electronics, weighed on performance and price.</p>
+            <div class="cat-browse-stats">94 reviews · Most searched: Wireless Earbuds</div>
+            <a href="category.html" class="cat-browse-link">View category →</a>
+          </div>
+
+          <!-- Health and Fitness -->
+          <div class="cat-browse-card">
+            <div class="cat-browse-img">
+              <img src="assets/images/cat-health.svg" alt="Health and fitness category cover" width="300" height="190" loading="lazy">
+            </div>
+            <div class="cat-browse-title">
+              <span class="cat-dot" style="background-color: var(--cat-health-dot);"></span>
+              Health and Fitness
+            </div>
+            <p class="cat-browse-desc">Wellness and fitness gear, matched to different routines and budgets.</p>
+            <div class="cat-browse-stats">14 reviews · Most searched: Adjustable Dumbbells</div>
+            <a href="category.html" class="cat-browse-link">View category →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDITOR'S PICKS: WINNERS WE'D BUY FIRST -->
+    <section class="section section-bg-subtle">
+      <div class="container">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 1rem;">
+          <div>
+            <span style="font-size: 0.75rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-muted);">Editor's Picks</span>
+            <h2 style="font-size: 2rem; font-weight: 800; color: var(--color-ink);">Winners we’d buy first</h2>
+          </div>
+          <a href="review-roundup.html" style="font-size: 0.875rem; font-weight: 700; color: var(--color-trust);">See all top picks →</a>
+        </div>
+
+        <div class="winners-grid">
+          <!-- Winner 1 -->
+          <div class="winner-card">
+            <div class="card-media-wrap">
+              <span class="badge badge-editor card-media-tag">Automotive</span>
+              <img src="assets/images/paint-pen.svg" alt="Paint pen for automotive" width="300" height="170" loading="lazy">
+            </div>
+            <div class="winner-content">
+              <div class="cat-pill cat-auto" style="align-self: flex-start; margin-bottom: 0.35rem;">
+                <span class="cat-dot"></span> Automotive Parts & Accessories
+              </div>
+              <h3 class="winner-title"><a href="product-single.html">Paint Pen for Automotive</a></h3>
+              <div class="winner-rating">★ 4.7 <span style="color: var(--color-muted); font-weight: normal;">composite · Budget</span></div>
+              <p class="winner-desc">Paint Pen for Automotive has as the go-to choice, offering unparalleled ease and finesse in restoring your vehicle's flawless exterior.</p>
+              <div style="font-size: 0.75rem; color: var(--color-muted); margin-bottom: 1rem;">Updated July 2026</div>
+              <a href="product-single.html" class="btn btn-primary btn-full">See top picks</a>
+            </div>
+          </div>
+
+          <!-- Winner 2 -->
+          <div class="winner-card">
+            <div class="card-media-wrap" style="background-color: #0284C7;">
+              <span class="badge badge-editor card-media-tag">Vacuum</span>
+              <img src="assets/images/cat-home.svg" alt="Vacuum cleaner" width="300" height="170" loading="lazy">
+            </div>
+            <div class="winner-content">
+              <div class="cat-pill cat-home" style="align-self: flex-start; margin-bottom: 0.35rem;">
+                <span class="cat-dot"></span> Vacuum Cleaner
+              </div>
+              <h3 class="winner-title"><a href="review-roundup.html">Vacuum cleaner with retractable cord</a></h3>
+              <div class="winner-rating">★ 4.5 <span style="color: var(--color-muted); font-weight: normal;">composite · Mid</span></div>
+              <p class="winner-desc">Step into the world of effortless cleaning with the remarkable convenience of a Vacuum cleaner with a retractable cord!</p>
+              <div style="font-size: 0.75rem; color: var(--color-muted); margin-bottom: 1rem;">Updated July 2026</div>
+              <a href="review-roundup.html" class="btn btn-primary btn-full">See top picks</a>
+            </div>
+          </div>
+
+          <!-- Winner 3 -->
+          <div class="winner-card">
+            <div class="card-media-wrap">
+              <span class="badge badge-editor card-media-tag">Projector</span>
+              <img src="assets/images/projector.svg" alt="Projector in daylight" width="300" height="170" loading="lazy">
+            </div>
+            <div class="winner-content">
+              <div class="cat-pill cat-electronics" style="align-self: flex-start; margin-bottom: 0.35rem;">
+                <span class="cat-dot"></span> Projector
+              </div>
+              <h3 class="winner-title"><a href="review-roundup.html">Best projectors in daylight</a></h3>
+              <div class="winner-rating">★ 4.6 <span style="color: var(--color-muted); font-weight: normal;">composite · Premium</span></div>
+              <p class="winner-desc">Welcome to the World of Enhanced Daylight Viewing – Discover the Best Projectors in daylight for Crisp and Vibrant Visuals!</p>
+              <div style="font-size: 0.75rem; color: var(--color-muted); margin-bottom: 1rem;">Updated July 2026</div>
+              <a href="review-roundup.html" class="btn btn-primary btn-full">See top picks</a>
+            </div>
+          </div>
+
+          <!-- Winner 4 -->
+          <div class="winner-card">
+            <div class="card-media-wrap">
+              <span class="badge badge-editor card-media-tag">Health</span>
+              <img src="assets/images/face-mask.svg" alt="Infrared face mask" width="300" height="170" loading="lazy">
+            </div>
+            <div class="winner-content">
+              <div class="cat-pill cat-health" style="align-self: flex-start; margin-bottom: 0.35rem;">
+                <span class="cat-dot"></span> Health and Fitness
+              </div>
+              <h3 class="winner-title"><a href="review-roundup.html">The Best Infrared Face Mask for 2025</a></h3>
+              <div class="winner-rating">★ 4.4 <span style="color: var(--color-muted); font-weight: normal;">composite · Premium</span></div>
+              <p class="winner-desc">Discover the best infrared face mask to rejuvenate your skin, reduce wrinkles, and improve texture. Perfect for at-home skincare treatments.</p>
+              <div style="font-size: 0.75rem; color: var(--color-muted); margin-bottom: 1rem;">Updated July 2026</div>
+              <a href="review-roundup.html" class="btn btn-primary btn-full">See top picks</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- METHODOLOGY DARK SECTION -->
+    <section class="section-methodology">
+      <div class="container methodology-grid">
+        <div>
+          <span style="font-size: 0.75rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-on-ink);">How we pick</span>
+          <h2 class="methodology-title">A score you can check, not a vibe.</h2>
+          <p class="methodology-text">
+            We review manufacturer specifications, compare practical features, consider suitability for different users and budgets, and clearly explain important limitations. Affiliate relationships do not determine the order of our recommendations.
+          </p>
+
+          <div class="methodology-steps">
+            <div class="method-step-row">
+              <span class="step-num-circle">1</span>
+              <div class="step-text">
+                <h4>Collect</h4>
+                <p>Manufacturer specs, verified buyer ratings and expert lab or press coverage.</p>
+              </div>
+            </div>
+            <div class="method-step-row">
+              <span class="step-num-circle">2</span>
+              <div class="step-text">
+                <h4>Score</h4>
+                <p>Combine the inputs into one composite score, with the weights published.</p>
+              </div>
+            </div>
+            <div class="method-step-row">
+              <span class="step-num-circle">3</span>
+              <div class="step-text">
+                <h4>Refresh</h4>
+                <p>Re-check pages on a schedule and show the date on every one.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="about.html" class="btn btn-white">Read our full method</a>
+        </div>
+
+        <!-- Sample Score Breakdown Box -->
+        <div>
+          <div class="score-breakdown-box">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1.5rem;">
+              <h3 style="font-size: 1.125rem; font-weight: 800; color: var(--color-ink);">Example score breakdown</h3>
+              <span style="font-size: 0.75rem; color: var(--color-muted);">Sample weights</span>
+            </div>
+
+            <div class="metric-row">
+              <div class="metric-header">
+                <span>Verified buyer ratings</span>
+                <span>4.8</span>
+              </div>
+              <div class="metric-bar-track">
+                <div class="metric-bar-fill" style="width: 96%; background-color: #2E6FA3;"></div>
+              </div>
+            </div>
+
+            <div class="metric-row">
+              <div class="metric-header">
+                <span>Spec match to claims</span>
+                <span>4.6</span>
+              </div>
+              <div class="metric-bar-track">
+                <div class="metric-bar-fill" style="width: 92%; background-color: #2E6FA3;"></div>
+              </div>
+            </div>
+
+            <div class="metric-row">
+              <div class="metric-header">
+                <span>Expert / lab coverage</span>
+                <span>4.7</span>
+              </div>
+              <div class="metric-bar-track">
+                <div class="metric-bar-fill" style="width: 94%; background-color: #2E6FA3;"></div>
+              </div>
+            </div>
+
+            <div class="metric-row">
+              <div class="metric-header">
+                <span>Value for the price tier</span>
+                <span>4.5</span>
+              </div>
+              <div class="metric-bar-track">
+                <div class="metric-bar-fill" style="width: 90%; background-color: #2E6FA3;"></div>
+              </div>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--color-border); padding-top: 1.25rem; margin-top: 1.5rem;">
+              <span style="font-size: 0.9375rem; font-weight: 800; color: var(--color-ink);">Composite score</span>
+              <span style="font-size: 1.5rem; font-weight: 800; color: var(--color-ink);">4.7 <span style="font-size: 1rem; color: var(--color-muted); font-weight: normal;">/ 5</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LATEST REVIEWS AND GUIDES -->
+    <section class="section">
+      <div class="container">
+        <h2 style="font-size: 2rem; font-weight: 800; color: var(--color-ink); margin-bottom: 1.25rem;">Latest reviews and guides</h2>
+        
+        <div class="reviews-filter-bar">
+          <a href="#" class="filter-tab active">All</a>
+          <a href="category.html" class="filter-tab">Automotive</a>
+          <a href="category.html" class="filter-tab">Electronics</a>
+          <a href="category.html" class="filter-tab">Home</a>
+          <a href="category.html" class="filter-tab">Health</a>
+          <a href="category.html" class="filter-tab">Lawn & Garden</a>
+        </div>
+
+        <div class="guides-grid">
+          <!-- Guide 1 -->
+          <article class="guide-card">
+            <div class="card-media-wrap">
+              <img src="assets/images/lawn-mower.svg" alt="Robot lawn mower" width="400" height="225" loading="lazy">
+            </div>
+            <div class="guide-body">
+              <div class="cat-pill cat-home" style="align-self: flex-start; margin-bottom: 0.35rem;">
+                <span class="cat-dot"></span> Lawn and Garden · Roundup
+              </div>
+              <h3 class="guide-title">
+                <a href="review-roundup.html">Best Robot Lawn Mower of 2025: Smart, Quiet & Hassle-Free</a>
+              </h3>
+              <div class="guide-meta">Updated December 2025 · 9 min read</div>
+            </div>
+          </article>
+
+          <!-- Guide 2 -->
+          <article class="guide-card">
+            <div class="card-media-wrap">
+              <img src="assets/images/cat-home.svg" alt="Electric lawn mower" width="400" height="225" loading="lazy">
+            </div>
+            <div class="guide-body">
+              <div class="cat-pill cat-home" style="align-self: flex-start; margin-bottom: 0.35rem;">
+                <span class="cat-dot"></span> Lawn and Garden · Roundup
+              </div>
+              <h3 class="guide-title">
+                <a href="review-roundup.html">Best Electric Lawn Mower | Efficient and Eco-Friendly Choices</a>
+              </h3>
+              <div class="guide-meta">Updated December 2025 · 8 min read</div>
+            </div>
+          </article>
+
+          <!-- Guide 3 -->
+          <article class="guide-card">
+            <div class="card-media-wrap">
+              <img src="assets/images/carplay.svg" alt="Wireless Apple CarPlay screen" width="400" height="225" loading="lazy">
+            </div>
+            <div class="guide-body">
+              <div class="cat-pill cat-auto" style="align-self: flex-start; margin-bottom: 0.35rem;">
+                <span class="cat-dot"></span> Driving Accessories · Roundup
+              </div>
+              <h3 class="guide-title">
+                <a href="review-roundup.html">Wireless Apple CarPlay Screen: 2025 Top Budget & Premium</a>
+              </h3>
+              <div class="guide-meta">Updated December 2025 · 8 min read</div>
+            </div>
+          </article>
+
+          <!-- Guide 4 -->
+          <article class="guide-card">
+            <div class="card-media-wrap">
+              <img src="assets/images/cat-electronics.svg" alt="Desk buddy robot toy" width="400" height="225" loading="lazy">
+            </div>
+            <div class="guide-body">
+              <div class="cat-pill cat-electronics" style="align-self: flex-start; margin-bottom: 0.35rem;">
+                <span class="cat-dot"></span> Electronics · Review
+              </div>
+              <h3 class="guide-title">
+                <a href="product-single.html">Interactive Fun Cute Robot Toy for Kids – Emotional Desk Buddy</a>
+              </h3>
+              <div class="guide-meta">Updated July 2026 · 6 min read</div>
+            </div>
+          </article>
+
+          <!-- Guide 5 -->
+          <article class="guide-card">
+            <div class="card-media-wrap">
+              <img src="assets/images/pressure-cooker.svg" alt="Electric pressure cooker" width="400" height="225" loading="lazy">
+            </div>
+            <div class="guide-body">
+              <div class="cat-pill cat-home" style="align-self: flex-start; margin-bottom: 0.35rem;">
+                <span class="cat-dot"></span> Home Appliances · Roundup
+              </div>
+              <h3 class="guide-title">
+                <a href="review-roundup.html">The best electric pressure cooker 2025: Instant Pot you still need</a>
+              </h3>
+              <div class="guide-meta">Updated July 2026 · 9 min read</div>
+            </div>
+          </article>
+
+          <!-- Guide 6 -->
+          <article class="guide-card">
+            <div class="card-media-wrap">
+              <img src="assets/images/cat-health.svg" alt="Blender food processor combo" width="400" height="225" loading="lazy">
+            </div>
+            <div class="guide-body">
+              <div class="cat-pill cat-home" style="align-self: flex-start; margin-bottom: 0.35rem;">
+                <span class="cat-dot"></span> Blender · Roundup
+              </div>
+              <h3 class="guide-title">
+                <a href="review-roundup.html">Top 5 Best Combo Blender Food Processor Models for 2025</a>
+              </h3>
+              <div class="guide-meta">Updated July 2026 · 8 min read</div>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem;">
+          <a href="category.html" class="btn btn-secondary" style="padding: 0.75rem 2.5rem;">Load more</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHO IS BEHIND EACH CATEGORY -->
+    <section class="section section-bg-subtle">
+      <div class="container">
+        <h2 style="font-size: 2rem; font-weight: 800; color: var(--color-ink); margin-bottom: 0.5rem;">Who is behind each category</h2>
+        <p style="font-size: 0.9375rem; color: var(--color-muted); margin-bottom: 2rem; max-width: 650px;">
+          Every guide has a named editor. They compile and verify specs, owner reviews and lab data from published sources. They don't claim hands-on testing they didn't do.
+        </p>
+
+        <div class="editors-grid">
+          <!-- Editor 1 -->
+          <div class="editor-card">
+            <span class="avatar-circle avatar-mw">MW</span>
+            <div class="editor-name">Marcus Webb</div>
+            <div class="editor-role">Automotive Editor</div>
+            <p class="editor-bio">Compiles and verifies manufacturer specs, owner reviews and lab data for car care and accessories.</p>
+          </div>
+
+          <!-- Editor 2 -->
+          <div class="editor-card">
+            <span class="avatar-circle avatar-jk">JK</span>
+            <div class="editor-name">Jordan Kim</div>
+            <div class="editor-role">Electronics Editor</div>
+            <p class="editor-bio">Tracks spec sheets and independent measurements across audio and computing products.</p>
+          </div>
+
+          <!-- Editor 3 -->
+          <div class="editor-card">
+            <span class="avatar-circle avatar-pn">PN</span>
+            <div class="editor-name">Priya Nair</div>
+            <div class="editor-role">Home Appliances Editor</div>
+            <p class="editor-bio">Cross-checks manufacturer claims against thousands of verified owner reports and long-term durability logs.</p>
+          </div>
+
+          <!-- Editor 4 -->
+          <div class="editor-card">
+            <span class="avatar-circle avatar-so">SO</span>
+            <div class="editor-name">Sam Okafor</div>
+            <div class="editor-role">Health & Fitness Editor</div>
+            <p class="editor-bio">Reads equipment specs and recovery research so you don't have to wade through marketing claims.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="section">
+      <div class="container container-narrow">
+        <h2 style="font-size: 2rem; font-weight: 800; color: var(--color-ink); text-align: center; margin-bottom: 2.5rem;">
+          Questions people ask us
+        </h2>
+
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>
+              <span>How does BuyBestForYou make money?</span>
+              <svg class="faq-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 1L5 5L9 1"/></svg>
+            </summary>
+            <div class="faq-content">
+              When you click on our recommended Amazon affiliate links and purchase a product, we may earn an affiliate commission at no extra cost to you. These commissions never influence our scoring or the order of our picks.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>Do you test every product yourselves?</span>
+              <svg class="faq-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 1L5 5L9 1"/></svg>
+            </summary>
+            <div class="faq-content">
+              We are clear and transparent: we combine verified buyer feedback, manufacturer technical specifications, and independent lab reports into structured composite scores. We explicitly state our evidence sources on every review.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>How often are guides updated?</span>
+              <svg class="faq-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 1L5 5L9 1"/></svg>
+            </summary>
+            <div class="faq-content">
+              Guides are refreshed routinely whenever a new generation launches, specs change, or verified owner sentiment shifts. The exact revision date and named editor are displayed at the top of every guide.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== GLOBAL FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <!-- Col 1: Brand & Disclosure -->
+      <div class="footer-brand">
+        <a href="index.html" class="brand-logo" aria-label="BuyBestForYou Home">
+          <svg class="brand-logo-icon" viewBox="0 0 32 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="4" width="22" height="16" rx="4"></rect>
+            <path d="M24 9L29 6V18L24 15"></path>
+            <circle cx="9" cy="12" r="2.5"></circle>
+            <line x1="14" y1="12" x2="19" y2="12"></line>
+          </svg>
+          <span>buybestforyou</span>
+        </a>
+        <h4 class="footer-heading" style="margin-top: 1rem;">AFFILIATE DISCLOSURE</h4>
+        <p class="footer-disclosure-text">
+          BuyBestForYou.com is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. As an Amazon Associate, we earn from qualifying purchases at no additional cost to you.
+        </p>
+        <a href="disclosure.html" class="footer-disclaimer-link">Read full disclaimer →</a>
+      </div>
+
+      <!-- Col 2: Useful Links -->
+      <div class="footer-col">
+        <h4 class="footer-heading">USEFUL LINKS</h4>
+        <ul class="footer-nav-list">
+          <li><a href="index.html" class="footer-nav-link">Home</a></li>
+          <li><a href="about.html" class="footer-nav-link">About</a></li>
+          <li><a href="blog.html" class="footer-nav-link">Blog</a></li>
+          <li><a href="category.html" class="footer-nav-link">Buying Guide</a></li>
+          <li><a href="about.html" class="footer-nav-link">Our Process</a></li>
+          <li><a href="contact.html" class="footer-nav-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Product Categories -->
+      <div class="footer-col">
+        <h4 class="footer-heading">PRODUCT</h4>
+        <ul class="footer-nav-list">
+          <li><a href="category.html" class="footer-nav-link">Headphone</a></li>
+          <li><a href="category.html" class="footer-nav-link">Projector</a></li>
+          <li><a href="category.html" class="footer-nav-link">Driving Accessories</a></li>
+          <li><a href="category.html" class="footer-nav-link">Lawn and Garden</a></li>
+          <li><a href="category.html" class="footer-nav-link">Vacuum Cleaner</a></li>
+          <li><a href="category.html" class="footer-nav-link">Car Electronics & GPS</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Social Links -->
+      <div class="footer-col">
+        <h4 class="footer-heading">SOCIAL LINKS</h4>
+        <ul class="footer-nav-list">
+          <li><a href="https://facebook.com" class="footer-nav-link" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://pinterest.com" class="footer-nav-link" target="_blank" rel="noopener">Pinterest</a></li>
+          <li><a href="https://linkedin.com" class="footer-nav-link" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://vimeo.com" class="footer-nav-link" target="_blank" rel="noopener">Vimeo</a></li>
+          <li><a href="https://youtube.com" class="footer-nav-link" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Copyright & Legal Links -->
+    <div class="container footer-bottom">
+      <div>©2026 BuyBestForYou. All Rights Reserved.</div>
+      <div class="footer-legal-links">
+        <a href="disclosure.html" class="footer-legal-link">Privacy Policy</a>
+        <a href="disclosure.html" class="footer-legal-link">Terms and conditions</a>
+        <a href="disclosure.html" class="footer-legal-link">Disclaimer</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automotive Buying Guides & Reviews — BuyBestForYou</title>
+  <meta name="description" content="Research-backed automotive buying guides covering car accessories, GPS navigation, paint repair pens, and driving essentials.">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- SHARED HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="BuyBestForYou Home">
+        <svg class="brand-logo-icon" viewBox="0 0 32 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="2" y="4" width="22" height="16" rx="4"></rect>
+          <path d="M24 9L29 6V18L24 15"></path>
+          <circle cx="9" cy="12" r="2.5"></circle>
+          <line x1="14" y1="12" x2="19" y2="12"></line>
+        </svg>
+        <span>buybestforyou</span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="menu-toggle-checkbox" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="menu-toggle-label" aria-label="Open menu">
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+      </label>
+
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="category.html" class="nav-link" style="opacity: 1; font-weight: 700;">
+              Automotive
+              <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 1L5 5L9 1"/></svg>
+            </a>
+            <div class="dropdown-menu">
+              <a href="category.html" class="dropdown-link">Automotive Parts & Accessories</a>
+              <a href="category.html" class="dropdown-link">Car Electronics & GPS</a>
+              <a href="category.html" class="dropdown-link">Driving Accessories</a>
+              <a href="review-roundup.html" class="dropdown-link">Best Robot Lawn Mowers</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="category.html" class="nav-link">Electronics</a></li>
+          <li class="nav-item"><a href="category.html" class="nav-link">Home Appliances</a></li>
+          <li class="nav-item"><a href="category.html" class="nav-link">Health and Fitness</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="404.html" class="search-trigger-btn" aria-label="Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+            <circle cx="11" cy="11" r="7"></circle>
+            <line x1="21" y1="21" x2="16.5" y2="16.5"></line>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- DISCLOSURE BAR -->
+  <aside class="disclosure-bar" aria-label="Affiliate disclosure banner">
+    <div class="container disclosure-inner">
+      <svg class="disclosure-icon" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+      </svg>
+      <span class="disclosure-text">
+        As an Amazon Associate we earn from qualifying purchases. Rankings are never for sale.
+        <a href="disclosure.html" class="disclosure-link">How we make money</a>
+      </span>
+    </div>
+  </aside>
+
+  <main id="main-content">
+
+    <!-- CATEGORY HEADER BAND -->
+    <section class="category-header-band">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="separator">›</span>
+          <span>Automotive</span>
+        </nav>
+
+        <div style="display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 2.5rem; align-items: start;">
+          <div>
+            <div class="cat-pill cat-auto" style="margin-bottom: 0.5rem;">
+              <span class="cat-dot"></span> Automotive
+            </div>
+            <h1 style="font-size: clamp(2.5rem, 5vw, 3.5rem); font-weight: 800; color: var(--color-ink); margin-bottom: 0.75rem;">
+              Automotive
+            </h1>
+            <p class="category-lead">
+              This hub covers the gear that keeps a vehicle running, connected, and presentable: car electronics and GPS units, automotive parts and touch-up supplies, and driving accessories. It's for anyone comparing options before a purchase, whether that's a jump starter for winter mornings, a paint pen for a scratch, or a mount for a phone. Guides here focus on practical decision points: which features actually matter for daily driving, what's worth paying more for, and where cheaper options hold up fine. Coverage is uneven across subcategories right now, so start with the featured picks below if you're not sure where to begin.
+            </p>
+            <div class="category-meta-chips">
+              <span class="meta-chip">Updated Oct 2026</span>
+              <span class="meta-chip">[N] guides</span>
+              <span class="meta-chip">Edited by Marcus Webb</span>
+            </div>
+          </div>
+
+          <!-- Quick Jump To Subcategory -->
+          <div style="background-color: #FFFFFF; border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1.5rem; margin-top: 1rem;">
+            <h3 style="font-size: 0.8125rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-ink); margin-bottom: 1rem;">
+              Jump to a subcategory
+            </h3>
+            <div style="display: flex; flex-direction: column; gap: 0.625rem;">
+              <a href="#sub-parts" class="meta-chip" style="display: flex; justify-content: space-between; border-radius: var(--radius-sm); padding: 0.625rem 1rem;">
+                <span>Automotive Parts & Accessories</span> <span>(6)</span>
+              </a>
+              <a href="#sub-electronics" class="meta-chip" style="display: flex; justify-content: space-between; border-radius: var(--radius-sm); padding: 0.625rem 1rem;">
+                <span>Car Electronics & GPS</span> <span>(4)</span>
+              </a>
+              <a href="#sub-driving" class="meta-chip" style="display: flex; justify-content: space-between; border-radius: var(--radius-sm); padding: 0.625rem 1rem;">
+                <span>Driving Accessories</span> <span>(1)</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- START HERE (3 FEATURED GUIDES) -->
+    <section class="section">
+      <div class="container">
+        <h2 style="font-size: 2rem; font-weight: 800; color: var(--color-ink); margin-bottom: 1.5rem;">Start here</h2>
+
+        <div class="guides-grid">
+          <!-- Feature 1 -->
+          <div class="winner-card">
+            <div class="card-media-wrap">
+              <span class="badge badge-editor card-media-tag">Automotive Parts & Accessories</span>
+              <img src="assets/images/paint-pen.svg" alt="Paint pen for automotive" width="400" height="225" loading="lazy">
+            </div>
+            <div class="winner-content">
+              <h3 class="winner-title"><a href="product-single.html">Paint Pen for Automotive</a></h3>
+              <p class="winner-desc">Paint Pen for Automotive has as the go-to choice, offering unparalleled ease and finesse in restoring your vehicle's flawless exterior.</p>
+              <div style="font-size: 0.75rem; color: var(--color-muted); margin-bottom: 1rem;">Updated July 2026</div>
+              <a href="product-single.html" class="btn btn-primary btn-full">See top picks</a>
+            </div>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="winner-card">
+            <div class="card-media-wrap">
+              <span class="badge badge-editor card-media-tag">Driving Accessories</span>
+              <img src="assets/images/carplay.svg" alt="Wireless Apple CarPlay Screen" width="400" height="225" loading="lazy">
+            </div>
+            <div class="winner-content">
+              <h3 class="winner-title"><a href="review-roundup.html">Wireless Apple CarPlay Screen: 2025 Top Budget & Premium</a></h3>
+              <p class="winner-desc">Discover the best Wireless Apple CarPlay Screen for your car. Get easy access to apps, navigation, and music without cables.</p>
+              <div style="font-size: 0.75rem; color: var(--color-muted); margin-bottom: 1rem;">Updated December 2025</div>
+              <a href="review-roundup.html" class="btn btn-primary btn-full">See top picks</a>
+            </div>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="winner-card">
+            <div class="card-media-wrap">
+              <span class="badge badge-editor card-media-tag">Automotive Parts & Accessories</span>
+              <img src="assets/images/cat-automotive.svg" alt="Spray gun for paint" width="400" height="225" loading="lazy">
+            </div>
+            <div class="winner-content">
+              <h3 class="winner-title"><a href="review-roundup.html">Best spray gun for automotive paint</a></h3>
+              <p class="winner-desc">Choosing the best spray gun for automotive paint is the first and most crucial step toward achieving professional-quality results.</p>
+              <div style="font-size: 0.75rem; color: var(--color-muted); margin-bottom: 1rem;">Updated July 2026</div>
+              <a href="review-roundup.html" class="btn btn-primary btn-full">See top picks</a>
+            </div>
+          </div>
+        </div>
+
+        <div style="font-size: 0.8125rem; color: var(--color-muted); margin-top: 1.5rem;">
+          Recommendations here follow the same research-based approach described in <a href="about.html">How We Research</a>. They are not in-house product tests.
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN LISTING WITH FACETED FILTERS -->
+    <section class="section section-bg-subtle">
+      <div class="container">
+        <div class="category-main-grid">
+          <!-- Sidebar Filters -->
+          <aside class="filter-sidebar" aria-label="Filters">
+            <div class="filter-group">
+              <div class="filter-group-title">Subcategory</div>
+              <label class="filter-checkbox-item">
+                <div>
+                  <input type="checkbox" checked>
+                  <span>Automotive Parts & Accessories</span>
+                </div>
+                <span class="filter-count">6</span>
+              </label>
+              <label class="filter-checkbox-item">
+                <div>
+                  <input type="checkbox">
+                  <span>Car Electronics & GPS</span>
+                </div>
+                <span class="filter-count">4</span>
+              </label>
+              <label class="filter-checkbox-item">
+                <div>
+                  <input type="checkbox">
+                  <span>Driving Accessories</span>
+                </div>
+                <span class="filter-count">1</span>
+              </label>
+            </div>
+
+            <div class="filter-group">
+              <div class="filter-group-title">Guide type</div>
+              <label class="filter-checkbox-item">
+                <div>
+                  <input type="checkbox">
+                  <span>Roundup</span>
+                </div>
+              </label>
+              <label class="filter-checkbox-item">
+                <div>
+                  <input type="checkbox">
+                  <span>Single review</span>
+                </div>
+              </label>
+              <label class="filter-checkbox-item">
+                <div>
+                  <input type="checkbox">
+                  <span>Buying guide</span>
+                </div>
+              </label>
+            </div>
+
+            <button type="button" class="btn btn-secondary btn-full btn-sm">Clear filters</button>
+          </aside>
+
+          <!-- Listing Content -->
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+              <span style="font-size: 0.875rem; font-weight: 700; color: var(--color-ink);">Showing 6 of 11 guides</span>
+              <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem;">
+                <label for="sort-select" style="color: var(--color-muted);">Sort by</label>
+                <select id="sort-select" class="form-select" style="width: auto; padding: 0.35rem 1rem;">
+                  <option>Newest</option>
+                  <option>Highest rated</option>
+                  <option>Most popular</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="guides-grid">
+              <!-- Item 1 -->
+              <article class="guide-card">
+                <div class="card-media-wrap">
+                  <img src="assets/images/cat-automotive.svg" alt="Kit for car wash" width="300" height="170" loading="lazy">
+                </div>
+                <div class="guide-body">
+                  <div class="cat-pill cat-auto" style="align-self: flex-start; margin-bottom: 0.35rem;">
+                    <span class="cat-dot"></span> Automotive
+                  </div>
+                  <h3 class="guide-title"><a href="review-roundup.html">Kit for Car Wash</a></h3>
+                  <div class="guide-meta">Updated July 2026</div>
+                  <a href="review-roundup.html" class="btn btn-primary btn-full btn-sm" style="margin-top: 1rem;">Read the guide</a>
+                </div>
+              </article>
+
+              <!-- Item 2 -->
+              <article class="guide-card">
+                <div class="card-media-wrap">
+                  <img src="assets/images/cat-electronics.svg" alt="Best cold welding machine" width="300" height="170" loading="lazy">
+                </div>
+                <div class="guide-body">
+                  <div class="cat-pill cat-electronics" style="align-self: flex-start; margin-bottom: 0.35rem;">
+                    <span class="cat-dot"></span> Electronics
+                  </div>
+                  <h3 class="guide-title"><a href="review-roundup.html">Best Cold Welding Machine</a></h3>
+                  <div class="guide-meta">Updated July 2026</div>
+                  <a href="review-roundup.html" class="btn btn-primary btn-full btn-sm" style="margin-top: 1rem;">Read the guide</a>
+                </div>
+              </article>
+
+              <!-- Item 3 -->
+              <article class="guide-card">
+                <div class="card-media-wrap">
+                  <img src="assets/images/paint-pen.svg" alt="Best lathes" width="300" height="170" loading="lazy">
+                </div>
+                <div class="guide-body">
+                  <div class="cat-pill cat-auto" style="align-self: flex-start; margin-bottom: 0.35rem;">
+                    <span class="cat-dot"></span> Automotive
+                  </div>
+                  <h3 class="guide-title"><a href="review-roundup.html">Best Lathes</a></h3>
+                  <div class="guide-meta">Updated July 2026</div>
+                  <a href="review-roundup.html" class="btn btn-primary btn-full btn-sm" style="margin-top: 1rem;">Read the guide</a>
+                </div>
+              </article>
+
+              <!-- Item 4 -->
+              <article class="guide-card">
+                <div class="card-media-wrap">
+                  <img src="assets/images/cat-automotive.svg" alt="LED headlights" width="300" height="170" loading="lazy">
+                </div>
+                <div class="guide-body">
+                  <div class="cat-pill cat-auto" style="align-self: flex-start; margin-bottom: 0.35rem;">
+                    <span class="cat-dot"></span> Automotive
+                  </div>
+                  <h3 class="guide-title"><a href="review-roundup.html">Best LED Headlights for Range Rover</a></h3>
+                  <div class="guide-meta">Updated July 2026</div>
+                  <a href="review-roundup.html" class="btn btn-primary btn-full btn-sm" style="margin-top: 1rem;">Read the guide</a>
+                </div>
+              </article>
+
+              <!-- Item 5 -->
+              <article class="guide-card">
+                <div class="card-media-wrap">
+                  <img src="assets/images/pressure-cooker.svg" alt="Super automatic espresso machine" width="300" height="170" loading="lazy">
+                </div>
+                <div class="guide-body">
+                  <div class="cat-pill cat-auto" style="align-self: flex-start; margin-bottom: 0.35rem;">
+                    <span class="cat-dot"></span> Automotive
+                  </div>
+                  <h3 class="guide-title"><a href="review-roundup.html">Best Super Automatic Espresso Machine Under $1000</a></h3>
+                  <div class="guide-meta">Updated July 2026</div>
+                  <a href="review-roundup.html" class="btn btn-primary btn-full btn-sm" style="margin-top: 1rem;">Read the guide</a>
+                </div>
+              </article>
+
+              <!-- Item 6 -->
+              <article class="guide-card">
+                <div class="card-media-wrap">
+                  <img src="assets/images/carplay.svg" alt="Portable battery charger" width="300" height="170" loading="lazy">
+                </div>
+                <div class="guide-body">
+                  <div class="cat-pill cat-auto" style="align-self: flex-start; margin-bottom: 0.35rem;">
+                    <span class="cat-dot"></span> Car Electronics & GPS
+                  </div>
+                  <h3 class="guide-title"><a href="review-roundup.html">Best Portable Automotive Battery Charger</a></h3>
+                  <div class="guide-meta">Updated July 2026</div>
+                  <a href="review-roundup.html" class="btn btn-primary btn-full btn-sm" style="margin-top: 1rem;">Read the guide</a>
+                </div>
+              </article>
+            </div>
+
+            <!-- Pagination -->
+            <nav class="pagination-wrap" aria-label="Pagination">
+              <a href="#" class="page-btn active" aria-current="page">1</a>
+              <a href="#" class="page-btn">2</a>
+              <a href="#" class="page-btn">Next »</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORY FAQ -->
+    <section class="section">
+      <div class="container container-narrow">
+        <h2 style="font-size: 2rem; font-weight: 800; color: var(--color-ink); text-align: center; margin-bottom: 2rem;">
+          Automotive: common questions
+        </h2>
+
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>
+              <span>What resolution dash cam do I actually need?</span>
+              <svg class="faq-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 1L5 5L9 1"/></svg>
+            </summary>
+            <div class="faq-content">
+              For most daily driving, 1440p (2K) at 30 or 60fps offers the optimal balance between clear license plate legibility and reasonable video file size without overheating issues in hot cabins.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>Do OBD-II scanners work on every car?</span>
+              <svg class="faq-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 1L5 5L9 1"/></svg>
+            </summary>
+            <div class="faq-content">
+              Virtually all consumer passenger cars and light trucks sold in the United States and Canada since 1996 (and Europe since 2001) are OBD-II compliant, though proprietary ABS and SRS airbag codes may require vehicle-specific scanner protocols.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>How do I find my car's paint code?</span>
+              <svg class="faq-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 1L5 5L9 1"/></svg>
+            </summary>
+            <div class="faq-content">
+              Your exact paint code is typically printed on the VIN driver's door jamb sticker, under the hood firewall, or in the glovebox manual. Never purchase a paint touch-up pen by color name alone.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- SHARED FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="brand-logo" aria-label="BuyBestForYou Home">
+          <svg class="brand-logo-icon" viewBox="0 0 32 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="4" width="22" height="16" rx="4"></rect>
+            <path d="M24 9L29 6V18L24 15"></path>
+            <circle cx="9" cy="12" r="2.5"></circle>
+            <line x1="14" y1="12" x2="19" y2="12"></line>
+          </svg>
+          <span>buybestforyou</span>
+        </a>
+        <h4 class="footer-heading" style="margin-top: 1rem;">AFFILIATE DISCLOSURE</h4>
+        <p class="footer-disclosure-text">
+          BuyBestForYou.com is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. As an Amazon Associate, we earn from qualifying purchases at no additional cost to you.
+        </p>
+        <a href="disclosure.html" class="footer-disclaimer-link">Read full disclaimer →</a>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">USEFUL LINKS</h4>
+        <ul class="footer-nav-list">
+          <li><a href="index.html" class="footer-nav-link">Home</a></li>
+          <li><a href="about.html" class="footer-nav-link">About</a></li>
+          <li><a href="blog.html" class="footer-nav-link">Blog</a></li>
+          <li><a href="category.html" class="footer-nav-link">Buying Guide</a></li>
+          <li><a href="about.html" class="footer-nav-link">Our Process</a></li>
+          <li><a href="contact.html" class="footer-nav-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">PRODUCT</h4>
+        <ul class="footer-nav-list">
+          <li><a href="category.html" class="footer-nav-link">Headphone</a></li>
+          <li><a href="category.html" class="footer-nav-link">Projector</a></li>
+          <li><a href="category.html" class="footer-nav-link">Driving Accessories</a></li>
+          <li><a href="category.html" class="footer-nav-link">Lawn and Garden</a></li>
+          <li><a href="category.html" class="footer-nav-link">Vacuum Cleaner</a></li>
+          <li><a href="category.html" class="footer-nav-link">Car Electronics & GPS</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">SOCIAL LINKS</h4>
+        <ul class="footer-nav-list">
+          <li><a href="https://facebook.com" class="footer-nav-link" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://pinterest.com" class="footer-nav-link" target="_blank" rel="noopener">Pinterest</a></li>
+          <li><a href="https://linkedin.com" class="footer-nav-link" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://vimeo.com" class="footer-nav-link" target="_blank" rel="noopener">Vimeo</a></li>
+          <li><a href="https://youtube.com" class="footer-nav-link" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div>©2026 BuyBestForYou. All Rights Reserved.</div>
+      <div class="footer-legal-links">
+        <a href="disclosure.html" class="footer-legal-link">Privacy Policy</a>
+        <a href="disclosure.html" class="footer-legal-link">Terms and conditions</a>
+        <a href="disclosure.html" class="footer-legal-link">Disclaimer</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
