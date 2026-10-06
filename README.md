@@ -6,7 +6,7 @@
 [![WCAG AA](https://img.shields.io/badge/Accessibility-WCAG_2.1_AA-blue?style=for-the-badge)](https://www.w3.org/WAI/standards-guidelines/wcag/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-> **Live Demo**: [https://<your-username>.github.io/<your-repo-name>/](https://<your-username>.github.io/<your-repo-name>/)  
+> **Live Demo**: [https://rafimohaimen-del.github.io/buybestforyou/>](https://rafimohaimen-del.github.io/buybestforyou/)  
 > *(Update the URL above once you deploy to GitHub Pages!)*
 
 A comprehensive, production-grade, responsive editorial buying-guide and product review website built with **100% Pure HTML5 and CSS3** (zero JavaScript, zero external CSS frameworks, zero runtime libraries). 
