@@ -27,6 +27,7 @@
   --color-border-dark: #374151;
   --color-dark-surface: #111827;        /* Header background */
   --color-footer-bg: #141820;           /* Footer background */
+  --color-disclosure-bg: #E6EFF4;       /* Affiliate disclosure bar background */
 
   /* --- Category Tints & Indicator Dots --- */
   /* Category colors are used only as dots or icon fills. Text on tints stays ink. */
@@ -88,6 +89,18 @@
   --transition-smooth: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+@media (max-width: 480px) {
+  :root {
+    --container-pad: 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  :root {
+    --container-pad: 0.75rem;
+  }
+}
+
 /* --- Base Reset & Box Sizing --- */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -99,6 +112,7 @@ html {
   font-size: 16px;
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+  overflow-x: clip;
 }
 
 body {
@@ -109,12 +123,22 @@ body {
   background-color: var(--color-bg-page);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: clip;
 }
 
-img, svg {
+img, svg, video, canvas, audio, iframe, embed, object {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+/* Prevent long unbroken words, URLs, and codes from stretching containers */
+h1, h2, h3, h4, h5, h6, p, a, span, li, dt, dd, th, td, blockquote, label {
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 a {
@@ -130,6 +154,7 @@ a:hover {
 input, button, textarea, select {
   font: inherit;
   color: inherit;
+  max-width: 100%;
 }
 
 button {

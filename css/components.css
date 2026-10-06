@@ -323,10 +323,13 @@
   border: 1px solid var(--color-border);
   max-width: 620px;
   width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .search-bar-input {
   flex: 1;
+  min-width: 0;
   border: none;
   outline: none;
   font-size: 1rem;
@@ -346,10 +349,27 @@
   font-weight: 700;
   font-size: 0.9375rem;
   transition: background-color var(--transition-speed);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .search-bar-btn:hover {
   background-color: var(--color-cta-hover);
+}
+
+@media (max-width: 480px) {
+  .search-bar-unified {
+    padding: 0.25rem 0.25rem 0.25rem 0.875rem;
+  }
+
+  .search-bar-input {
+    font-size: 0.875rem;
+  }
+
+  .search-bar-btn {
+    padding: 0.625rem 1rem;
+    font-size: 0.875rem;
+  }
 }
 
 /* --- Card Styles --- */
@@ -548,13 +568,18 @@
 /* --- Comparison Data Table --- */
 .table-responsive {
   width: 100%;
+  max-width: 100%;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   border-radius: var(--radius-md);
   border: 1px solid var(--color-border);
+  display: block;
+  box-sizing: border-box;
 }
 
 .compare-table {
   width: 100%;
+  min-width: 520px;
   border-collapse: collapse;
   text-align: left;
   font-size: 0.875rem;
@@ -566,6 +591,7 @@
   font-weight: 700;
   color: var(--color-muted);
   border-bottom: 1px solid var(--color-border);
+  white-space: nowrap;
 }
 
 .compare-table td {
@@ -576,6 +602,33 @@
 
 .compare-table tr:last-child td {
   border-bottom: none;
+}
+
+/* --- Embedded Product Callout (Editorial Inline) --- */
+.embedded-product-callout {
+  background-color: #FFFFFF;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  box-shadow: var(--shadow-subtle);
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.embedded-product-callout-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-width: 0;
+}
+
+.embedded-product-callout-action {
+  text-align: right;
+  flex-shrink: 0;
 }
 
 /* --- Breadcrumbs --- */
@@ -605,5 +658,50 @@
 @media (max-width: 768px) {
   .pros-cons-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .embedded-product-callout {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .embedded-product-callout-action {
+    width: 100%;
+    text-align: left;
+  }
+
+  .embedded-product-callout-action .btn {
+    width: 100%;
+  }
+
+  .score-badge-circle {
+    width: 58px;
+    height: 58px;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sentiment-row {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .sentiment-pct {
+    width: auto;
+    margin-right: 0.5rem;
+  }
+
+  .sentiment-text {
+    padding: 0;
+    width: 100%;
+    order: 3;
+  }
+
+  .card-pros, .card-cons {
+    padding: 1rem 1.15rem;
   }
 }
