@@ -43,10 +43,12 @@
   --cat-trust-dot: #2B5D7C;
 
   /* --- Radius Scale --- */
+  --radius-btn: 8px;                    /* Standard buttons */
+  --radius-btn-sm: 6px;                 /* Compact buttons */
   --radius-sm: 14px;                    /* Inputs, small cards */
   --radius-md: 16px;                    /* Standard cards */
   --radius-lg: 20px;                    /* Feature cards */
-  --radius-pill: 999px;                 /* Pills, buttons */
+  --radius-pill: 999px;                 /* Pills, badges, tags */
 
   /* --- Typography Scale & Weights --- */
   --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;

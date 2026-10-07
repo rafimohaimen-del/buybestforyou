@@ -13,7 +13,7 @@
   font-size: 0.9375rem;
   line-height: 1.25;
   padding: 0.8125rem 1.625rem;
-  border-radius: var(--radius-pill);
+  border-radius: var(--radius-btn);
   transition: all var(--transition-speed) ease;
   text-decoration: none;
   cursor: pointer;
@@ -49,11 +49,13 @@
 .btn-sm {
   padding: 0.5rem 1rem;
   font-size: 0.8125rem;
+  border-radius: var(--radius-btn-sm);
 }
 
 .btn-lg {
   padding: 1rem 2rem;
   font-size: 1rem;
+  border-radius: 10px;
 }
 
 .btn-full {
