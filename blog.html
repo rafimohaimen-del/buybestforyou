@@ -269,9 +269,11 @@
     </div>
   </main>
 
-  <!-- SHARED FOOTER -->
+  <!-- ==================== GLOBAL FOOTER ==================== -->
   <footer class="site-footer">
-    <div class="container footer-top">
+    <!-- Desktop Footer -->
+    <div class="container footer-top desktop-only">
+      <!-- Col 1: Brand & Disclosure -->
       <div class="footer-brand">
         <a href="index.html" class="brand-logo" aria-label="BuyBestForYou Home">
           <svg class="brand-logo-icon" viewBox="0 0 32 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -289,6 +291,7 @@
         <a href="disclosure.html" class="footer-disclaimer-link">Read full disclaimer →</a>
       </div>
 
+      <!-- Col 2: Useful Links -->
       <div class="footer-col">
         <h4 class="footer-heading">USEFUL LINKS</h4>
         <ul class="footer-nav-list">
@@ -301,6 +304,7 @@
         </ul>
       </div>
 
+      <!-- Col 3: Product Categories -->
       <div class="footer-col">
         <h4 class="footer-heading">PRODUCT</h4>
         <ul class="footer-nav-list">
@@ -313,6 +317,7 @@
         </ul>
       </div>
 
+      <!-- Col 4: Social Links -->
       <div class="footer-col">
         <h4 class="footer-heading">SOCIAL LINKS</h4>
         <ul class="footer-nav-list">
@@ -325,12 +330,43 @@
       </div>
     </div>
 
-    <div class="container footer-bottom">
+    <!-- Bottom Copyright & Legal Links -->
+    <div class="container footer-bottom desktop-only">
       <div>©2026 BuyBestForYou. All Rights Reserved.</div>
       <div class="footer-legal-links">
         <a href="disclosure.html" class="footer-legal-link">Privacy Policy</a>
         <a href="disclosure.html" class="footer-legal-link">Terms and conditions</a>
         <a href="disclosure.html" class="footer-legal-link">Disclaimer</a>
+      </div>
+    </div>
+
+    <!-- Mobile Footer (strictly matched with 11 · Mobile homepage.png) -->
+    <div class="container footer-mobile mobile-only">
+      <a href="index.html" class="brand-logo" aria-label="BuyBestForYou Home">
+        <svg class="brand-logo-icon" viewBox="0 0 32 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="2" y="4" width="22" height="16" rx="4"></rect>
+          <path d="M24 9L29 6V18L24 15"></path>
+          <circle cx="9" cy="12" r="2.5"></circle>
+          <line x1="14" y1="12" x2="19" y2="12"></line>
+        </svg>
+        <span>buybestforyou</span>
+      </a>
+
+      <p class="footer-mobile-disclosure">
+        As an Amazon Associate, we earn from qualifying purchases at no additional cost to you.
+      </p>
+
+      <div class="footer-mobile-links">
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="disclosure.html">Disclosure</a>
+        <a href="disclosure.html">Privacy</a>
+        <a href="disclosure.html">Terms</a>
+      </div>
+
+      <div class="footer-mobile-copy">
+        ©2026 BuyBestForYou. All Rights Reserved.
       </div>
     </div>
   </footer>
