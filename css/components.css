@@ -430,22 +430,9 @@
   text-decoration: none;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
   border: 1px solid rgba(0, 0, 0, 0.06);
-  transition: all var(--transition-speed) ease;
-  cursor: pointer;
-}
-
-.winner-card .card-media-tag:not(.badge-editor):hover,
-.card-media-btn:hover {
-  background-color: #F3F4F6;
-  color: var(--color-ink);
-  transform: translateY(-1px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.22);
-}
-
-.winner-card .card-media-tag:not(.badge-editor):focus-visible,
-.card-media-btn:focus-visible {
-  outline: 2px solid var(--color-ink);
-  outline-offset: 2px;
+  cursor: default;
+  pointer-events: none;
+  user-select: none;
 }
 
 /* Author Avatar / Persona Badge */

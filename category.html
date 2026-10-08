@@ -91,9 +91,6 @@
 
         <div class="category-header-grid">
           <div>
-            <div class="cat-pill cat-auto" style="margin-bottom: 0.5rem;">
-              <span class="cat-dot"></span> Automotive
-            </div>
             <h1 style="font-size: clamp(2.5rem, 5vw, 3.5rem); font-weight: 800; color: var(--color-ink); margin-bottom: 0.75rem;">
               Automotive
             </h1>
@@ -108,19 +105,22 @@
           </div>
 
           <!-- Quick Jump To Subcategory -->
-          <div style="background-color: #FFFFFF; border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1.5rem; margin-top: 1rem;">
-            <h3 style="font-size: 0.8125rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-ink); margin-bottom: 1rem;">
+          <div class="subcategory-jump-block">
+            <h3 class="subcategory-jump-title">
               Jump to a subcategory
             </h3>
-            <div style="display: flex; flex-direction: column; gap: 0.625rem;">
-              <a href="#sub-parts" class="meta-chip" style="display: flex; justify-content: space-between; border-radius: var(--radius-sm); padding: 0.625rem 1rem;">
-                <span>Automotive Parts & Accessories</span> <span>(6)</span>
+            <div class="subcategory-jump-list">
+              <a href="#sub-parts" class="subcategory-jump-pill">
+                <span>Automotive Parts & Accessories</span>
+                <span class="pill-count">(6)</span>
               </a>
-              <a href="#sub-electronics" class="meta-chip" style="display: flex; justify-content: space-between; border-radius: var(--radius-sm); padding: 0.625rem 1rem;">
-                <span>Car Electronics & GPS</span> <span>(4)</span>
+              <a href="#sub-electronics" class="subcategory-jump-pill">
+                <span>Car Electronics & GPS</span>
+                <span class="pill-count">(4)</span>
               </a>
-              <a href="#sub-driving" class="meta-chip" style="display: flex; justify-content: space-between; border-radius: var(--radius-sm); padding: 0.625rem 1rem;">
-                <span>Driving Accessories</span> <span>(1)</span>
+              <a href="#sub-driving" class="subcategory-jump-pill">
+                <span>Driving Accessories</span>
+                <span class="pill-count">(1)</span>
               </a>
             </div>
           </div>
@@ -137,8 +137,8 @@
           <!-- Feature 1 -->
           <div class="winner-card">
             <div class="card-media-wrap">
-              <span class="badge badge-editor card-media-tag">Automotive Parts & Accessories</span>
-              <img src="assets/images/paint-pen.svg" alt="Paint pen for automotive" width="400" height="225" loading="lazy">
+              <span class="card-media-tag card-media-btn">Automotive Parts & Accessories</span>
+              <img src="assets/images/cat-feat-paint-pen.png" alt="Paint Pen for Automotive" width="400" height="225" loading="lazy">
             </div>
             <div class="winner-content">
               <h3 class="winner-title"><a href="product-single.html">Paint Pen for Automotive</a></h3>
@@ -151,8 +151,8 @@
           <!-- Feature 2 -->
           <div class="winner-card">
             <div class="card-media-wrap">
-              <span class="badge badge-editor card-media-tag">Driving Accessories</span>
-              <img src="assets/images/carplay.svg" alt="Wireless Apple CarPlay Screen" width="400" height="225" loading="lazy">
+              <span class="card-media-tag card-media-btn">Driving Accessories</span>
+              <img src="assets/images/cat-feat-carplay.jpg" alt="Wireless Apple CarPlay Screen" width="400" height="225" loading="lazy">
             </div>
             <div class="winner-content">
               <h3 class="winner-title"><a href="review-roundup.html">Wireless Apple CarPlay Screen: 2025 Top Budget & Premium</a></h3>
@@ -165,8 +165,8 @@
           <!-- Feature 3 -->
           <div class="winner-card">
             <div class="card-media-wrap">
-              <span class="badge badge-editor card-media-tag">Automotive Parts & Accessories</span>
-              <img src="assets/images/cat-automotive.svg" alt="Spray gun for paint" width="400" height="225" loading="lazy">
+              <span class="card-media-tag card-media-btn">Automotive Parts & Accessories</span>
+              <img src="assets/images/cat-feat-spray-gun.jpg" alt="Best spray gun for automotive paint" width="400" height="225" loading="lazy">
             </div>
             <div class="winner-content">
               <h3 class="winner-title"><a href="review-roundup.html">Best spray gun for automotive paint</a></h3>
@@ -236,13 +236,13 @@
               </label>
             </div>
 
-            <button type="button" class="btn btn-secondary btn-full btn-sm">Clear filters</button>
+            <button type="button" class="btn btn-secondary btn-full filter-clear-btn">Clear filters</button>
           </aside>
 
           <!-- Listing Content -->
           <div>
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
-              <span style="font-size: 0.875rem; font-weight: 700; color: var(--color-ink);">Showing 6 of 11 guides</span>
+              <span style="font-size: 0.875rem; font-weight: 700; color: var(--color-ink);">Showing 6 of [N] guides</span>
               <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem;">
                 <label for="sort-select" style="color: var(--color-muted);">Sort by</label>
                 <select id="sort-select" class="form-select" style="width: auto; padding: 0.35rem 1rem;">
@@ -257,90 +257,78 @@
               <!-- Item 1 -->
               <article class="guide-card">
                 <div class="card-media-wrap">
-                  <img src="assets/images/cat-automotive.svg" alt="Kit for car wash" width="300" height="170" loading="lazy">
+                  <img src="assets/images/cat-list-car-wash.png" alt="Kit for Car Wash" width="554" height="302" loading="lazy">
                 </div>
                 <div class="guide-body">
-                  <div class="cat-pill cat-auto" style="align-self: flex-start; margin-bottom: 0.35rem;">
-                    <span class="cat-dot"></span> Automotive
-                  </div>
+                  <div class="guide-category">Automotive</div>
                   <h3 class="guide-title"><a href="review-roundup.html">Kit for Car Wash</a></h3>
                   <div class="guide-meta">Updated July 2026</div>
-                  <a href="review-roundup.html" class="btn btn-primary btn-full btn-sm" style="margin-top: 1rem;">Read the guide</a>
+                  <a href="review-roundup.html" class="btn btn-primary btn-full" style="margin-top: 1rem;">Read the guide</a>
                 </div>
               </article>
 
               <!-- Item 2 -->
               <article class="guide-card">
                 <div class="card-media-wrap">
-                  <img src="assets/images/cat-electronics.svg" alt="Best cold welding machine" width="300" height="170" loading="lazy">
+                  <img src="assets/images/cat-list-cold-welding.png" alt="Best Cold Welding Machine" width="554" height="302" loading="lazy">
                 </div>
                 <div class="guide-body">
-                  <div class="cat-pill cat-electronics" style="align-self: flex-start; margin-bottom: 0.35rem;">
-                    <span class="cat-dot"></span> Electronics
-                  </div>
+                  <div class="guide-category">Electronics</div>
                   <h3 class="guide-title"><a href="review-roundup.html">Best Cold Welding Machine</a></h3>
                   <div class="guide-meta">Updated July 2026</div>
-                  <a href="review-roundup.html" class="btn btn-primary btn-full btn-sm" style="margin-top: 1rem;">Read the guide</a>
+                  <a href="review-roundup.html" class="btn btn-primary btn-full" style="margin-top: 1rem;">Read the guide</a>
                 </div>
               </article>
 
               <!-- Item 3 -->
               <article class="guide-card">
                 <div class="card-media-wrap">
-                  <img src="assets/images/paint-pen.svg" alt="Best lathes" width="300" height="170" loading="lazy">
+                  <img src="assets/images/cat-list-lathes.png" alt="Best Lathes" width="554" height="302" loading="lazy">
                 </div>
                 <div class="guide-body">
-                  <div class="cat-pill cat-auto" style="align-self: flex-start; margin-bottom: 0.35rem;">
-                    <span class="cat-dot"></span> Automotive
-                  </div>
+                  <div class="guide-category">Automotive</div>
                   <h3 class="guide-title"><a href="review-roundup.html">Best Lathes</a></h3>
                   <div class="guide-meta">Updated July 2026</div>
-                  <a href="review-roundup.html" class="btn btn-primary btn-full btn-sm" style="margin-top: 1rem;">Read the guide</a>
+                  <a href="review-roundup.html" class="btn btn-primary btn-full" style="margin-top: 1rem;">Read the guide</a>
                 </div>
               </article>
 
               <!-- Item 4 -->
               <article class="guide-card">
                 <div class="card-media-wrap">
-                  <img src="assets/images/cat-automotive.svg" alt="LED headlights" width="300" height="170" loading="lazy">
+                  <img src="assets/images/cat-list-headlights.png" alt="Best LED Headlights for Range Rover" width="554" height="302" loading="lazy">
                 </div>
                 <div class="guide-body">
-                  <div class="cat-pill cat-auto" style="align-self: flex-start; margin-bottom: 0.35rem;">
-                    <span class="cat-dot"></span> Automotive
-                  </div>
+                  <div class="guide-category">Automotive</div>
                   <h3 class="guide-title"><a href="review-roundup.html">Best LED Headlights for Range Rover</a></h3>
                   <div class="guide-meta">Updated July 2026</div>
-                  <a href="review-roundup.html" class="btn btn-primary btn-full btn-sm" style="margin-top: 1rem;">Read the guide</a>
+                  <a href="review-roundup.html" class="btn btn-primary btn-full" style="margin-top: 1rem;">Read the guide</a>
                 </div>
               </article>
 
               <!-- Item 5 -->
               <article class="guide-card">
                 <div class="card-media-wrap">
-                  <img src="assets/images/pressure-cooker.svg" alt="Super automatic espresso machine" width="300" height="170" loading="lazy">
+                  <img src="assets/images/cat-list-espresso.png" alt="Best Super Automatic Espresso Machine Under $1000" width="554" height="302" loading="lazy">
                 </div>
                 <div class="guide-body">
-                  <div class="cat-pill cat-auto" style="align-self: flex-start; margin-bottom: 0.35rem;">
-                    <span class="cat-dot"></span> Automotive
-                  </div>
+                  <div class="guide-category">Automotive</div>
                   <h3 class="guide-title"><a href="review-roundup.html">Best Super Automatic Espresso Machine Under $1000</a></h3>
                   <div class="guide-meta">Updated July 2026</div>
-                  <a href="review-roundup.html" class="btn btn-primary btn-full btn-sm" style="margin-top: 1rem;">Read the guide</a>
+                  <a href="review-roundup.html" class="btn btn-primary btn-full" style="margin-top: 1rem;">Read the guide</a>
                 </div>
               </article>
 
               <!-- Item 6 -->
               <article class="guide-card">
                 <div class="card-media-wrap">
-                  <img src="assets/images/carplay.svg" alt="Portable battery charger" width="300" height="170" loading="lazy">
+                  <img src="assets/images/cat-list-battery-charger.png" alt="Best Portable Automotive Battery Charger" width="554" height="302" loading="lazy">
                 </div>
                 <div class="guide-body">
-                  <div class="cat-pill cat-auto" style="align-self: flex-start; margin-bottom: 0.35rem;">
-                    <span class="cat-dot"></span> Car Electronics & GPS
-                  </div>
+                  <div class="guide-category">Car Electronics & GPS</div>
                   <h3 class="guide-title"><a href="review-roundup.html">Best Portable Automotive Battery Charger</a></h3>
                   <div class="guide-meta">Updated July 2026</div>
-                  <a href="review-roundup.html" class="btn btn-primary btn-full btn-sm" style="margin-top: 1rem;">Read the guide</a>
+                  <a href="review-roundup.html" class="btn btn-primary btn-full" style="margin-top: 1rem;">Read the guide</a>
                 </div>
               </article>
             </div>
@@ -359,7 +347,7 @@
     <!-- CATEGORY FAQ -->
     <section class="section">
       <div class="container container-narrow">
-        <h2 style="font-size: 2rem; font-weight: 800; color: var(--color-ink); text-align: center; margin-bottom: 2rem;">
+        <h2 style="font-size: 2rem; font-weight: 800; color: var(--color-ink); text-align: left; margin-bottom: 2rem;">
           Automotive: common questions
         </h2>
 
