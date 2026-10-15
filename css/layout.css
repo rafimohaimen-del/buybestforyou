@@ -51,7 +51,7 @@
   align-items: center;
   height: 84px;
   min-height: 84px;
-  gap: 0.6rem;
+  gap: 1.6rem;
 }
 
 /* Logo */
@@ -91,7 +91,7 @@
 .nav-list {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  gap: 2.25rem;
   min-width: 0;
 }
 
@@ -99,12 +99,15 @@
   .header-inner {
     gap: 0.4rem;
   }
+
   .main-nav {
     gap: 0.4rem;
   }
+
   .nav-list {
     gap: 0.875rem;
   }
+
   .nav-link {
     font-size: 1.05rem;
   }
@@ -425,19 +428,21 @@
     z-index: 999;
   }
 
-  .menu-toggle-checkbox:checked ~ .main-nav {
+  .menu-toggle-checkbox:checked~.main-nav {
     transform: translateY(0);
     opacity: 1;
     pointer-events: auto;
   }
 
-  .menu-toggle-checkbox:checked ~ .menu-toggle-label .menu-toggle-bar:nth-child(1) {
+  .menu-toggle-checkbox:checked~.menu-toggle-label .menu-toggle-bar:nth-child(1) {
     transform: translateY(7px) rotate(45deg);
   }
-  .menu-toggle-checkbox:checked ~ .menu-toggle-label .menu-toggle-bar:nth-child(2) {
+
+  .menu-toggle-checkbox:checked~.menu-toggle-label .menu-toggle-bar:nth-child(2) {
     opacity: 0;
   }
-  .menu-toggle-checkbox:checked ~ .menu-toggle-label .menu-toggle-bar:nth-child(3) {
+
+  .menu-toggle-checkbox:checked~.menu-toggle-label .menu-toggle-bar:nth-child(3) {
     transform: translateY(-7px) rotate(-45deg);
   }
 
