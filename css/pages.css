@@ -3,6 +3,88 @@
    ========================================================================== */
 
 /* --- 1. Homepage Styles --- */
+/* Font-size increase of 20% on index.html starting from the trust-bar section */
+.page-home .hero-home ~ section {
+  font-size: 1.2rem;
+}
+
+/* Winner's Pick 4-Card Grid (Home Page Scope) */
+.page-home .winner-title {
+  font-size: 1.2rem;
+}
+.page-home .winner-rating {
+  font-size: 0.975rem;
+}
+.page-home .winner-desc {
+  font-size: 0.975rem;
+}
+.page-home .winner-content .cat-pill {
+  font-size: 0.9rem;
+}
+.page-home .winner-card .card-media-tag {
+  font-size: 0.9rem;
+}
+.page-home .winner-cta-btn {
+  font-size: 1.05rem;
+}
+
+/* Methodology Steps & Details (Home Page Scope) */
+.page-home .step-num-circle {
+  font-size: 1.05rem;
+  width: 34px;
+  height: 34px;
+}
+.page-home .step-text h4 {
+  font-size: 1.2rem;
+}
+.page-home .step-text p {
+  font-size: 1.05rem;
+}
+.page-home .methodology-cta-btn {
+  font-size: 1.05rem;
+}
+.page-home .metric-header {
+  font-size: 1.05rem;
+}
+
+/* Latest Reviews & Guides (Home Page Scope) */
+.page-home .section-latest-guides .guide-title {
+  font-size: 1.35rem;
+}
+.page-home .section-latest-guides .guide-meta {
+  font-size: 0.9rem;
+}
+.page-home .section-latest-guides .cat-pill {
+  font-size: 0.9rem;
+}
+.page-home .latest-load-more-wrap .btn-secondary {
+  font-size: 1.05rem;
+}
+
+/* Editors Grid (Home Page Scope) */
+.page-home .editor-name {
+  font-size: 1.2rem;
+}
+.page-home .editor-role {
+  font-size: 0.9rem;
+}
+.page-home .editor-bio {
+  font-size: 0.975rem;
+}
+.page-home .editor-card .avatar-circle {
+  font-size: 1.05rem;
+  width: 52px;
+  height: 52px;
+}
+
+/* FAQ (Home Page Scope) */
+.page-home .faq-item summary {
+  font-size: 1.35rem;
+}
+.page-home .faq-content {
+  font-size: 1.125rem;
+}
+
 .hero-home {
   padding-top: 3.5rem;
   padding-bottom: 2.5rem;
@@ -10,8 +92,8 @@
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 3.5rem;
+  grid-template-columns: 1.08fr 0.92fr;
+  gap: 2.75rem;
   align-items: center;
 }
 
@@ -59,20 +141,31 @@
 }
 
 /* Featured Hero Product Card */
+.hero-featured-wrap {
+  width: 100%;
+  max-width: 510px;
+  margin-left: auto;
+}
+
 .hero-featured-card {
   background-color: #FFFFFF;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
-  padding: 1.5rem;
+  padding: calc(1.25rem + 10px) calc(1.5rem + 10px) 1.5rem calc(1.5rem + 10px);
   box-shadow: var(--shadow-card);
+  width: 100%;
 }
 
 .hero-featured-image {
   border-radius: var(--radius-sm);
   overflow: hidden;
+  margin-left: -20px;
+  margin-right: -20px;
+  width: calc(100% + 40px);
+  height: 260px;
+  margin-top: -6px;
   margin-bottom: 1.25rem;
   position: relative;
-  aspect-ratio: 16 / 10;
   background-color: #F9FAFB;
 }
 
@@ -80,6 +173,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .hero-featured-tag {
@@ -157,22 +251,22 @@
 }
 
 .trust-item-icon {
-  width: 22px;
-  height: 22px;
+  width: 26px;
+  height: 26px;
   color: var(--color-trust);
   flex-shrink: 0;
   margin-top: 2px;
 }
 
 .trust-item h4 {
-  font-size: 0.875rem;
+  font-size: 1.05rem;
   font-weight: 700;
   color: var(--color-ink);
   margin-bottom: 0.2rem;
 }
 
 .trust-item p {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   line-height: 1.4;
   color: var(--color-muted);
 }
@@ -242,14 +336,14 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 1.125rem;
+  font-size: 1.35rem;
   font-weight: 800;
   color: var(--color-ink);
   margin-bottom: 0.5rem;
 }
 
 .cat-browse-desc {
-  font-size: 0.8125rem;
+  font-size: 0.975rem;
   line-height: 1.45;
   color: var(--color-muted);
   margin-bottom: 1rem;
@@ -257,7 +351,7 @@
 }
 
 .cat-browse-stats {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   color: var(--color-muted);
   border-top: 1px solid rgba(0, 0, 0, 0.08);
   padding-top: 0.75rem;
@@ -265,7 +359,7 @@
 }
 
 .cat-browse-link {
-  font-size: 0.8125rem;
+  font-size: 0.975rem;
   font-weight: 700;
   color: var(--color-ink);
   display: inline-flex;
@@ -339,7 +433,7 @@
 }
 
 .methodology-title {
-  font-size: var(--font-heading-size);
+  font-size: clamp(2.1rem, 4.2vw, 3rem);
   font-weight: var(--font-heading-weight);
   line-height: var(--font-heading-lh);
   color: #FFFFFF;
@@ -347,7 +441,7 @@
 }
 
 .methodology-text {
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.6;
   color: var(--color-on-ink);
   margin-bottom: 2rem;
@@ -408,7 +502,7 @@
 .filter-tab {
   padding: 0.5rem 1rem;
   border-radius: var(--radius-pill);
-  font-size: 0.8125rem;
+  font-size: 0.975rem;
   font-weight: 700;
   color: var(--color-muted);
   border: 1px solid var(--color-border);
@@ -1692,7 +1786,7 @@
   }
 
   .section-title.mobile-only {
-    font-size: 1.5rem !important;
+    font-size: 1.8rem !important;
     font-weight: 800 !important;
     color: var(--color-ink) !important;
     letter-spacing: -0.02em;
@@ -1806,7 +1900,7 @@
   }
 
   .cat-browse-title {
-    font-size: 1.05rem !important;
+    font-size: 1.26rem !important;
     font-weight: 800 !important;
     color: var(--color-ink) !important;
     margin-bottom: 0 !important;
@@ -1825,7 +1919,7 @@
   }
 
   .cat-browse-stats {
-    font-size: 0.8125rem !important;
+    font-size: 0.975rem !important;
     color: var(--color-muted) !important;
     border-top: none !important;
     padding-top: 0 !important;
@@ -1895,7 +1989,7 @@
   }
 
   .winner-title {
-    font-size: 1.15rem !important;
+    font-size: 1.38rem !important;
     font-weight: 800 !important;
     color: var(--color-ink) !important;
     margin-top: 0.15rem !important;
@@ -1913,7 +2007,7 @@
     color: #FFFFFF !important;
     border-radius: 8px !important;
     font-weight: 700 !important;
-    font-size: 0.9375rem !important;
+    font-size: 1.125rem !important;
     padding: 0.85rem !important;
     display: block !important;
     width: 100% !important;
@@ -1937,7 +2031,7 @@
   }
 
   .methodology-title {
-    font-size: 1.85rem !important;
+    font-size: 2.22rem !important;
     font-weight: 800 !important;
     color: #FFFFFF !important;
     line-height: 1.15 !important;
@@ -1947,7 +2041,7 @@
 
   .methodology-text-mobile {
     color: var(--color-on-ink) !important;
-    font-size: 0.9375rem !important;
+    font-size: 1.125rem !important;
     line-height: 1.5 !important;
     margin-bottom: 1.75rem !important;
   }
@@ -1957,7 +2051,7 @@
     color: var(--color-ink) !important;
     border-radius: 8px !important;
     font-weight: 700 !important;
-    font-size: 0.9375rem !important;
+    font-size: 1.125rem !important;
     padding: 0.85rem !important;
     display: block !important;
     width: 100% !important;
@@ -2023,7 +2117,7 @@
   }
 
   .guide-category-mobile {
-    font-size: 0.8125rem !important;
+    font-size: 0.975rem !important;
     font-weight: 500 !important;
     color: var(--color-muted) !important;
     margin-bottom: 0.2rem !important;
@@ -2031,7 +2125,7 @@
   }
 
   .guide-card-row .guide-title {
-    font-size: 0.95rem !important;
+    font-size: 1.14rem !important;
     font-weight: 700 !important;
     color: var(--color-ink) !important;
     line-height: 1.35 !important;
@@ -2044,7 +2138,7 @@
   }
 
   .guide-card-row .guide-meta {
-    font-size: 0.75rem !important;
+    font-size: 0.9rem !important;
     color: var(--color-muted) !important;
     line-height: 1.3 !important;
   }
@@ -2059,7 +2153,7 @@
     color: var(--color-ink) !important;
     border-radius: 8px !important;
     font-weight: 700 !important;
-    font-size: 0.9375rem !important;
+    font-size: 1.125rem !important;
     padding: 0.8rem 1.5rem !important;
     display: block !important;
     width: 100% !important;
