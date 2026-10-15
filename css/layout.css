@@ -49,10 +49,9 @@
 .header-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   height: 84px;
   min-height: 84px;
-  gap: 1.5rem;
+  gap: 0.6rem;
 }
 
 /* Logo */
@@ -61,8 +60,8 @@
   align-items: center;
   gap: 0.75rem;
   color: #FFFFFF;
-  font-weight: 600;
-  font-size: 2rem;
+  font-weight: 400;
+  font-size: 1.4rem;
   letter-spacing: -0.02em;
   text-decoration: none;
   flex-shrink: 0;
@@ -85,7 +84,7 @@
 .main-nav {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 0.6rem;
   min-width: 0;
 }
 
@@ -98,16 +97,16 @@
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .header-inner {
-    gap: 1rem;
+    gap: 0.4rem;
   }
   .main-nav {
-    gap: 1rem;
+    gap: 0.4rem;
   }
   .nav-list {
     gap: 0.875rem;
   }
   .nav-link {
-    font-size: 0.875rem;
+    font-size: 1.05rem;
   }
 }
 
@@ -117,7 +116,7 @@
 
 .nav-link {
   color: #FFFFFF;
-  font-size: 0.9375rem;
+  font-size: 1.125rem;
   font-weight: 500;
   display: inline-flex;
   align-items: center;
@@ -181,6 +180,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-left: auto;
 }
 
 .search-trigger-btn {
@@ -384,7 +384,7 @@
 
   .brand-logo {
     order: 1;
-    font-size: 1.65rem;
+    font-size: 1.15rem;
   }
 
   .brand-logo-icon {
@@ -561,7 +561,7 @@
 
 @media (max-width: 480px) {
   .brand-logo {
-    font-size: 1.45rem;
+    font-size: 1rem;
     gap: 0.5rem;
   }
 
@@ -573,7 +573,7 @@
 
 @media (max-width: 360px) {
   .brand-logo {
-    font-size: 1.25rem;
+    font-size: 0.875rem;
     gap: 0.4rem;
   }
 
