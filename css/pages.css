@@ -3,20 +3,34 @@
    ========================================================================== */
 
 /* --- 1. Homepage Styles --- */
-/* Font-size increase of 20% on index.html starting from the trust-bar section */
+/* Base scaling: all <h> +15%, all <p> +10% on index.html */
+.page-home .hero-title {
+  font-size: clamp(2.76rem, 5.52vw, 3.795rem); /* clamp(2rem, 4vw, 2.75rem) * 1.15 * 1.20 */
+}
+.page-home .hero-lead {
+  font-size: 1.2375rem; /* 1.125rem * 1.10 */
+}
+.page-home .hero-featured-title {
+  font-size: 1.863rem; /* 1.35rem * 1.15 * 1.20 */
+}
+.page-home .hero-featured-desc {
+  font-size: 0.9625rem; /* 0.875rem * 1.10 */
+}
+
+/* Sections starting from the trust-bar section */
 .page-home .hero-home ~ section {
   font-size: 1.2rem;
 }
 
 /* Winner's Pick 4-Card Grid (Home Page Scope) */
 .page-home .winner-title {
-  font-size: 1.2rem;
+  font-size: 1.656rem; /* 1.2rem * 1.15 * 1.20 */
 }
 .page-home .winner-rating {
   font-size: 0.975rem;
 }
 .page-home .winner-desc {
-  font-size: 0.975rem;
+  font-size: 1.0725rem; /* 0.975rem * 1.10 */
 }
 .page-home .winner-content .cat-pill {
   font-size: 0.9rem;
@@ -35,10 +49,10 @@
   height: 34px;
 }
 .page-home .step-text h4 {
-  font-size: 1.2rem;
+  font-size: 1.656rem; /* 1.2rem * 1.15 * 1.20 */
 }
 .page-home .step-text p {
-  font-size: 1.05rem;
+  font-size: 1.155rem; /* 1.05rem * 1.10 */
 }
 .page-home .methodology-cta-btn {
   font-size: 1.05rem;
@@ -49,7 +63,7 @@
 
 /* Latest Reviews & Guides (Home Page Scope) */
 .page-home .section-latest-guides .guide-title {
-  font-size: 1.35rem;
+  font-size: 1.863rem; /* 1.35rem * 1.15 * 1.20 */
 }
 .page-home .section-latest-guides .guide-meta {
   font-size: 0.9rem;
@@ -69,7 +83,7 @@
   font-size: 0.9rem;
 }
 .page-home .editor-bio {
-  font-size: 0.975rem;
+  font-size: 1.0725rem; /* 0.975rem * 1.10 */
 }
 .page-home .editor-card .avatar-circle {
   font-size: 1.05rem;
@@ -83,6 +97,17 @@
 }
 .page-home .faq-content {
   font-size: 1.125rem;
+}
+
+/* Footer <h> and <p> on index.html */
+.page-home .site-footer .footer-heading {
+  font-size: 1.121rem; /* 0.8125rem * 1.15 * 1.20 */
+}
+.page-home .site-footer .footer-disclosure-text {
+  font-size: 0.9625rem; /* 0.875rem * 1.10 */
+}
+.page-home .site-footer .footer-mobile-disclosure {
+  font-size: 0.825rem; /* 0.75rem * 1.10 */
 }
 
 .hero-home {
@@ -259,14 +284,14 @@
 }
 
 .trust-item h4 {
-  font-size: 1.05rem;
+  font-size: 1.449rem;
   font-weight: 700;
   color: var(--color-ink);
   margin-bottom: 0.2rem;
 }
 
 .trust-item p {
-  font-size: 0.9rem;
+  font-size: 0.99rem;
   line-height: 1.4;
   color: var(--color-muted);
 }
@@ -343,7 +368,7 @@
 }
 
 .cat-browse-desc {
-  font-size: 0.975rem;
+  font-size: 1.0725rem;
   line-height: 1.45;
   color: var(--color-muted);
   margin-bottom: 1rem;
@@ -433,7 +458,7 @@
 }
 
 .methodology-title {
-  font-size: clamp(2.1rem, 4.2vw, 3rem);
+  font-size: clamp(2.898rem, 5.8vw, 4.14rem);
   font-weight: var(--font-heading-weight);
   line-height: var(--font-heading-lh);
   color: #FFFFFF;
@@ -441,7 +466,7 @@
 }
 
 .methodology-text {
-  font-size: 1.2rem;
+  font-size: 1.32rem;
   line-height: 1.6;
   color: var(--color-on-ink);
   margin-bottom: 2rem;
@@ -1786,7 +1811,7 @@
   }
 
   .section-title.mobile-only {
-    font-size: 1.8rem !important;
+    font-size: 2.484rem !important;
     font-weight: 800 !important;
     color: var(--color-ink) !important;
     letter-spacing: -0.02em;
@@ -1805,14 +1830,14 @@
   }
 
   .hero-title {
-    font-size: 2.35rem;
+    font-size: 3.24rem;
     line-height: 1.12;
     margin-bottom: 0.875rem;
     letter-spacing: -0.03em;
   }
 
   .hero-lead {
-    font-size: 0.95rem;
+    font-size: 1.045rem;
     line-height: 1.45;
     color: var(--color-muted);
     margin-bottom: 1.35rem;
@@ -1989,7 +2014,7 @@
   }
 
   .winner-title {
-    font-size: 1.38rem !important;
+    font-size: 1.9044rem !important;
     font-weight: 800 !important;
     color: var(--color-ink) !important;
     margin-top: 0.15rem !important;
@@ -2031,7 +2056,7 @@
   }
 
   .methodology-title {
-    font-size: 2.22rem !important;
+    font-size: 3.0636rem !important;
     font-weight: 800 !important;
     color: #FFFFFF !important;
     line-height: 1.15 !important;
@@ -2041,7 +2066,7 @@
 
   .methodology-text-mobile {
     color: var(--color-on-ink) !important;
-    font-size: 1.125rem !important;
+    font-size: 1.2375rem !important;
     line-height: 1.5 !important;
     margin-bottom: 1.75rem !important;
   }
@@ -2125,7 +2150,7 @@
   }
 
   .guide-card-row .guide-title {
-    font-size: 1.14rem !important;
+    font-size: 1.5732rem !important;
     font-weight: 700 !important;
     color: var(--color-ink) !important;
     line-height: 1.35 !important;
@@ -2170,7 +2195,7 @@
 
 @media (max-width: 360px) {
   .hero-title {
-    font-size: 2rem !important;
+    font-size: 2.76rem !important;
   }
   .cat-browse-img {
     width: 66px !important;
