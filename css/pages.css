@@ -1872,7 +1872,7 @@
   }
 
   .section-title.mobile-only {
-    font-size: 2.9808rem !important;
+    font-size: 2.38464rem !important;
     font-weight: 800 !important;
     color: var(--color-ink) !important;
     letter-spacing: -0.02em;
@@ -1893,7 +1893,7 @@
   }
 
   .hero-title {
-    font-size: 3.888rem;
+    font-size: 3.1104rem;
     line-height: 1.232;
     /* 1.12 * 1.10 (+10% line-height) */
     margin-bottom: 0.875rem;
@@ -2121,7 +2121,7 @@
   }
 
   .methodology-title {
-    font-size: 3.67632rem !important;
+    font-size: 2.941056rem !important;
     font-weight: 800 !important;
     color: #FFFFFF !important;
     line-height: 1.15 !important;
@@ -2260,7 +2260,7 @@
 
 @media (max-width: 360px) {
   .hero-title {
-    font-size: 3.312rem !important;
+    font-size: 2.6496rem !important;
   }
 
   .cat-browse-img {
