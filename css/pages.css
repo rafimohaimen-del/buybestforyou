@@ -27,7 +27,7 @@
 
 .page-home section.section-winners {
   padding-top: 3.25rem;
-  padding-bottom: 1.875rem;
+  padding-bottom: 4.875rem;
 }
 
 .page-home .section-methodology {
@@ -401,7 +401,7 @@
 }
 
 .methodology-title {
-  font-size: clamp(2.4rem, 4.8vw, 3.3rem);
+  font-size: 2.2rem;
   font-weight: var(--font-heading-weight);
   line-height: var(--font-heading-lh);
   color: #FFFFFF;
@@ -2018,8 +2018,8 @@
 
   /* 3. Editor's Picks Section */
   .section-winners {
-    padding-top: 2.5rem;
-    padding-bottom: 0.75rem;
+    padding-top: 2.5rem !important;
+    padding-bottom: 0.75rem !important;
     background-color: #FFFFFF !important;
   }
 
