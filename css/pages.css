@@ -5,7 +5,7 @@
 /* --- 1. Homepage Styles --- */
 .hero-home {
   padding-top: 5rem;
-  padding-bottom: 1rem;
+  padding-bottom: 4rem;
   line-height: 1.5;
 }
 
@@ -16,8 +16,8 @@
 
 .page-home .trust-bar,
 .page-home .hero-home + section {
-  padding-top: 2.35rem;
-  padding-bottom: 0.5rem;
+  padding-top: 1.35rem;
+  padding-bottom: 1.5rem;
 }
 
 .page-home section.section-categories {
@@ -201,7 +201,7 @@
   background-color: var(--color-bg-subtle);
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
-  padding: 2.35rem 0 0.5rem;
+  padding: 1.35rem 0 1.5rem;
 }
 
 .trust-grid {
@@ -1883,7 +1883,7 @@
   /* 1. Hero Section */
   .hero-home {
     padding-top: 4rem;
-    padding-bottom: 5rem;
+    padding-bottom: 8rem;
     line-height: 1.65;
     /* Base line-height +10% */
   }
