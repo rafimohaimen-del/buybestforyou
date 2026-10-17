@@ -1883,7 +1883,7 @@
   /* 1. Hero Section */
   .hero-home {
     padding-top: 4rem;
-    padding-bottom: 8rem;
+    padding-bottom: 1rem;
     line-height: 1.65;
     /* Base line-height +10% */
   }
@@ -1893,9 +1893,8 @@
   }
 
   .hero-title {
-    font-size: 3.1104rem;
-    line-height: 1.232;
-    /* 1.12 * 1.10 (+10% line-height) */
+    font-size: 2.48832rem;
+    line-height: 1.12;
     margin-bottom: 0.875rem;
     letter-spacing: -0.03em;
   }
@@ -2260,7 +2259,7 @@
 
 @media (max-width: 360px) {
   .hero-title {
-    font-size: 2.6496rem !important;
+    font-size: 2.11968rem !important;
   }
 
   .cat-browse-img {
