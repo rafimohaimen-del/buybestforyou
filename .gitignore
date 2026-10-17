@@ -12,3 +12,6 @@ desktop.ini
 # Temp / Log files
 *.log
 scratch/
+node_modules/
+package.json
+package-lock.json
