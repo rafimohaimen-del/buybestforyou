@@ -586,7 +586,7 @@
 }
 
 .review-headline {
-  font-size: clamp(2.4rem, 4.8vw, 3.6rem);
+  font-size: clamp(2.304rem, 4.608vw, 3.456rem);
   font-weight: 800;
   line-height: 1.15;
   color: var(--color-ink);
@@ -601,6 +601,18 @@
   font-size: 0.875rem;
   color: var(--color-muted);
   margin-bottom: 2rem;
+}
+
+.author-byline .author-name {
+  color: var(--color-ink);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.author-byline .author-meta {
+  color: var(--color-muted);
+  font-size: 0.875rem;
+  line-height: 1.35;
 }
 
 .quick-answer-box {
@@ -620,11 +632,13 @@
   margin-bottom: 0.5rem;
 }
 
-.quick-answer-text {
+.quick-answer-text,
+.quick-answers-text {
   font-size: 1.0625rem;
   line-height: 1.6;
   color: var(--color-ink);
   margin-bottom: 1.5rem;
+  max-width: calc(100% - 12rem);
 }
 
 .quick-picks-grid {
@@ -644,10 +658,17 @@
 
 .quick-pick-title {
   font-size: 1.2rem;
-  font-weight: 800;
+  font-weight: 600;
   color: var(--color-ink);
   margin-top: 0.35rem;
   margin-bottom: 0.75rem;
+}
+
+.quick-pick-card .btn {
+  min-height: 2.74rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 0.89375rem;
 }
 
 /* Precise sizing for review-roundup page to match 1280x4824 */
@@ -663,6 +684,28 @@
 
 .page-review-roundup .review-main-column > section {
   margin-bottom: 6rem !important;
+}
+
+.review-main-column #compare .compare-table thead tr,
+.review-main-column .compare-table thead tr {
+  height: calc(49.5px + 1rem);
+}
+
+.review-main-column #compare .compare-table tbody tr,
+.review-main-column .compare-table tbody tr {
+  height: calc(79px + 1rem);
+}
+
+.review-main-column #compare .compare-table th,
+.review-main-column .compare-table th {
+  padding-top: 1.375rem;
+  padding-bottom: 1.375rem;
+}
+
+.review-main-column #compare .compare-table td,
+.review-main-column .compare-table td {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .page-review-roundup .section.section-bg-subtle {
@@ -727,7 +770,21 @@
   color: #FFFFFF;
   font-weight: 800;
   font-size: 0.875rem;
-  margin-right: 0.5rem;
+}
+
+.product-num-pill-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  margin-bottom: 0.625rem;
+}
+
+.product-num-pill-wrap .product-num-badge {
+  margin-right: 0;
+}
+
+.product-num-pill-wrap .cat-pill {
+  margin-bottom: 0 !important;
 }
 
 .product-review-title {
@@ -739,12 +796,50 @@
   line-height: 1.25;
 }
 
+.page-review-roundup .score-badge-circle {
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  box-shadow: none;
+  width: auto;
+  height: auto;
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 1;
+  padding: 0;
+  color: var(--color-ink);
+}
+
 .product-showcase-split {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
   gap: 2rem;
   align-items: center;
   margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.product-showcase-split .score-meta-title {
+  font-size: 1.05rem;
+  line-height: 1.25;
+}
+
+.product-showcase-split .score-meta-sub {
+  font-size: 0.875rem;
+}
+
+.product-showcase-split p {
+  font-size: 1.05rem !important;
+  line-height: 1.55;
+}
+
+.product-showcase-split .btn {
+  font-size: 1.05rem;
+  padding: 0.9375rem 1.5rem;
+}
+
+.product-showcase-split .product-affiliate-note {
+  font-size: 0.8125rem !important;
 }
 
 .product-image-box {
@@ -753,6 +848,14 @@
   padding: 1.5rem;
   text-align: center;
   border: 1px solid var(--color-border);
+}
+
+.product-image-box img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
 }
 
 .skip-if-box {
@@ -1429,6 +1532,7 @@
 
 /* --- 6. Legal & Policy Page Styles --- */
 .page-disclosure .legal-grid {
+  margin-left: 6rem;
   margin-bottom: 6.3125rem;
 }
 
@@ -1448,7 +1552,7 @@
 }
 
 .legal-lead {
-  font-size: 1.125rem;
+  font-size: 1.2375rem;
   line-height: 1.5;
   color: var(--color-ink);
   max-width: 660px;
@@ -1508,13 +1612,17 @@
   margin: 1.5rem 0;
 }
 
+.legal-content {
+  font-size: 1.1694375rem;
+}
+
 .legal-callout {
   background-color: #F8FAFC;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   padding: 1.75rem;
   margin-bottom: 2.5rem;
-  font-size: 0.9375rem;
+  font-size: 1.10446875rem;
   line-height: 1.6;
   color: var(--color-ink);
 }
@@ -1533,7 +1641,7 @@
 }
 
 .legal-content p {
-  font-size: 0.9375rem;
+  font-size: 1.1694375rem;
   line-height: 1.65;
   color: var(--color-ink);
   margin-bottom: 1.25rem;
@@ -1687,9 +1795,11 @@
     gap: 2.5rem;
   }
 
+  .page-disclosure .legal-grid,
   .legal-grid {
     grid-template-columns: 1fr;
     gap: 2.5rem;
+    margin-left: 0;
   }
 
   .legal-sidebar {
@@ -1812,6 +1922,11 @@
 
   .quick-answer-box {
     padding: 1.5rem;
+  }
+
+  .quick-answer-text,
+  .quick-answers-text {
+    max-width: 100%;
   }
 
   .guest-author-banner,
