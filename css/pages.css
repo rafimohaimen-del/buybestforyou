@@ -79,8 +79,10 @@
 }
 
 .hero-search-area .search-bar-unified {
-  max-width: 540px;
-  padding: 0.35rem 0.35rem 0.35rem 1.25rem;
+  max-width: 567px;
+  width: 100%;
+  min-height: 65.66px;
+  padding: 0.5375rem 0.35rem 0.5375rem 1.25rem;
 }
 
 .popular-tags {
@@ -119,6 +121,9 @@
   padding: 1.5rem;
   box-shadow: var(--shadow-card);
   width: 100%;
+  margin-top: -0.6rem;
+  margin-left: 1rem;
+  margin-right: -1rem;
 }
 
 .hero-featured-image {
@@ -1825,7 +1830,9 @@
   .page-blog-single #step-4,
   .page-blog-single #mistakes,
   .page-blog-single .short-answer-box,
-  .page-blog-single .embedded-product-callout {
+  .page-blog-single .embedded-product-callout,
+  .hero-featured-card {
+    margin-top: 0 !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
