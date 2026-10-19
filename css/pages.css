@@ -937,7 +937,7 @@
 .category-header-band {
   background-color: #F4EDE7;
   /* Automotive subtle tint */
-  padding: 3.4375rem 0;
+  padding: 2.9375rem 0;
   border-bottom: 1px solid var(--color-border);
 }
 
@@ -987,9 +987,10 @@
 
 .category-lead {
   max-width: 680px;
-  font-size: 1rem;
+  font-size: 1.023rem;
+  font-weight: 400;
   line-height: 1.6;
-  color: var(--color-muted);
+  color: var(--color-body);
   margin-top: 0.75rem;
   margin-bottom: 1.5rem;
 }
@@ -1013,12 +1014,14 @@
 
 /* Quick Jump To Subcategory */
 .subcategory-jump-block {
-  margin-top: 0.5rem;
+  margin-top: 10.5rem;
+  margin-left: -2rem;
+  margin-right: 2rem;
 }
 
 .subcategory-jump-title {
   font-size: 1.125rem;
-  font-weight: 800;
+  font-weight: 700;
   color: var(--color-ink);
   margin-bottom: 0.875rem;
 }
@@ -1036,7 +1039,9 @@
   background-color: #FFFFFF;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-pill);
-  padding: 0.625rem 1.25rem;
+  width: 17rem;
+  max-width: 100%;
+  padding: 0.35rem 1rem;
   color: var(--color-ink);
   font-size: 0.875rem;
   font-weight: 600;
@@ -1833,6 +1838,12 @@
   .category-header-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+
+  .subcategory-jump-block {
+    margin-top: 1.5rem !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 
   .product-review-details-grid {
