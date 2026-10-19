@@ -1736,10 +1736,12 @@
 }
 
 .blog-hero-image-wrap {
-  width: calc(100% - 7rem);
-  max-width: calc(100% - 7rem);
+  width: calc(100% - 10rem);
+  max-width: calc(100% - 10rem);
   height: calc(30.857rem - 5rem);
-  margin: 0 auto 3rem;
+  margin-left: 4.5rem;
+  margin-right: 5.5rem;
+  margin-bottom: 3rem;
   overflow: hidden;
 }
 
@@ -1816,6 +1818,8 @@
   .page-blog-single #step-2,
   .page-blog-single #step-3,
   .page-blog-single #step-4,
+  .page-blog-single #mistakes,
+  .page-blog-single .short-answer-box,
   .page-blog-single .embedded-product-callout {
     margin-left: 0 !important;
     margin-right: 0 !important;
