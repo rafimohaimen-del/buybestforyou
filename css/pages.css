@@ -1736,11 +1736,11 @@
 }
 
 .blog-hero-image-wrap {
-  width: calc(100% - 10rem);
-  max-width: calc(100% - 10rem);
-  height: calc(30.857rem - 5rem);
-  margin-left: 4.5rem;
-  margin-right: 5.5rem;
+  width: calc(100% - 11.4rem);
+  max-width: calc(100% - 11.4rem);
+  height: calc(30.857rem - 6.4rem);
+  margin-left: 5.2rem;
+  margin-right: 6.2rem;
   margin-bottom: 3rem;
   overflow: hidden;
 }
