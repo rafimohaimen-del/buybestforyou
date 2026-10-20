@@ -87,7 +87,6 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.35rem 0.875rem;
   border-radius: var(--radius-pill);
   font-size: 0.8125rem;
   font-weight: 700;
@@ -108,9 +107,10 @@
 }
 
 /* Specific category styles */
-.cat-auto {
+/* .cat-auto {
   background-color: var(--cat-auto-bg);
-}
+} */
+
 .cat-auto .cat-dot {
   background-color: var(--cat-auto-dot);
 }
@@ -118,20 +118,23 @@
 .cat-electronics {
   background-color: var(--cat-electronics-bg);
 }
+
 .cat-electronics .cat-dot {
   background-color: var(--cat-electronics-dot);
 }
 
-.cat-home {
+/* .cat-home {
   background-color: var(--cat-home-bg);
-}
+} */
+
 .cat-home .cat-dot {
   background-color: var(--cat-home-dot);
 }
 
-.cat-health {
+/* .cat-health {
   background-color: var(--cat-health-bg);
-}
+} */
+
 .cat-health .cat-dot {
   background-color: var(--cat-health-dot);
 }
@@ -139,6 +142,7 @@
 .cat-trust {
   background-color: var(--cat-trust-bg);
 }
+
 .cat-trust .cat-dot {
   background-color: var(--cat-trust-dot);
 }
@@ -221,7 +225,8 @@
   margin: 1.5rem 0;
 }
 
-.card-pros, .card-cons {
+.card-pros,
+.card-cons {
   padding: 1.25rem 1.5rem;
   border-radius: var(--radius-sm);
 }
@@ -234,7 +239,8 @@
   background-color: var(--color-negative-bg);
 }
 
-.card-pros h4, .card-cons h4 {
+.card-pros h4,
+.card-cons h4 {
   font-size: 1.125rem;
   font-weight: 800;
   margin-bottom: 0.75rem;
@@ -292,7 +298,9 @@
   color: var(--color-ink);
 }
 
-.form-input, .form-textarea, .form-select {
+.form-input,
+.form-textarea,
+.form-select {
   width: 100%;
   padding: 0.75rem 1rem;
   border-radius: var(--radius-sm);
@@ -304,7 +312,9 @@
   transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
 }
 
-.form-input:focus, .form-textarea:focus, .form-select:focus {
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
   border-color: var(--color-cta-deep);
   box-shadow: var(--shadow-input-focus);
 }
@@ -450,10 +460,21 @@
   flex-shrink: 0;
 }
 
-.avatar-mw { background-color: #7A4E2D; }
-.avatar-jk { background-color: #2E6FA3; }
-.avatar-pn { background-color: #3A8452; }
-.avatar-so { background-color: #B23A5C; }
+.avatar-mw {
+  background-color: #7A4E2D;
+}
+
+.avatar-jk {
+  background-color: #2E6FA3;
+}
+
+.avatar-pn {
+  background-color: #3A8452;
+}
+
+.avatar-so {
+  background-color: #B23A5C;
+}
 
 /* --- Pure CSS Accordion / FAQ --- */
 .faq-list {
@@ -723,7 +744,8 @@
     order: 3;
   }
 
-  .card-pros, .card-cons {
+  .card-pros,
+  .card-cons {
     padding: 1rem 1.15rem;
   }
 }

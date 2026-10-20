@@ -5,29 +5,44 @@
 
 :root {
   /* --- Colour Deltas & Brand Colors --- */
-  --color-cta-deep: #B84A14;            /* Primary CTA button fills (5.21:1 on white) */
-  --color-cta-hover: #9E3E0F;           /* Subtle dark hover */
-  --color-muted: #5B6470;               /* Secondary text (6.0:1 on white) */
-  --color-trust: #2B5D7C;               /* Links, disclosure anchor */
-  --color-trust-hover: #1E4359;         /* Dark hover for links */
-  --color-on-ink: #B4BBC4;              /* Secondary text on dark/footer bands */
-  
-  --color-positive-text: #007A58;       /* Pros glyph / positive highlights */
-  --color-positive-bg: #E8F2EB;         /* Pros pill & card tint */
-  --color-negative-text: #B34E00;       /* Cons glyph / negative highlights */
-  --color-negative-bg: #FDF1EA;         /* Cons pill & card tint */
-  
-  --color-ink: #111827;                 /* Headings & dark text */
+  --color-cta-deep: #B84A14;
+  /* Primary CTA button fills (5.21:1 on white) */
+  --color-cta-hover: #9E3E0F;
+  /* Subtle dark hover */
+  --color-muted: #5B6470;
+  /* Secondary text (6.0:1 on white) */
+  --color-trust: #2B5D7C;
+  /* Links, disclosure anchor */
+  --color-trust-hover: #1E4359;
+  /* Dark hover for links */
+  --color-on-ink: #B4BBC4;
+  /* Secondary text on dark/footer bands */
+
+  --color-positive-text: #007A58;
+  /* Pros glyph / positive highlights */
+  --color-positive-bg: #E8F2EB;
+  /* Pros pill & card tint */
+  --color-negative-text: #B34E00;
+  /* Cons glyph / negative highlights */
+  --color-negative-bg: #FDF1EA;
+  /* Cons pill & card tint */
+
+  --color-ink: #111827;
+  /* Headings & dark text */
   --color-ink-rgb: 17, 24, 39;
-  --color-body: #1F2937;                /* Body copy */
+  --color-body: #1F2937;
+  /* Body copy */
   --color-bg-page: #FFFFFF;
   --color-bg-subtle: #F9FAFB;
   --color-bg-card: #FFFFFF;
   --color-border: #E5E7EB;
   --color-border-dark: #374151;
-  --color-dark-surface: #1A1D22;        /* Header background (matching Design resized) */
-  --color-footer-bg: #1A1D22;           /* Footer background (matching Design resized) */
-  --color-disclosure-bg: #E6EFF4;       /* Affiliate disclosure bar background */
+  --color-dark-surface: #1A1D22;
+  /* Header background (matching Design resized) */
+  --color-footer-bg: #1A1D22;
+  /* Footer background (matching Design resized) */
+  --color-disclosure-bg: #E6EFF4;
+  /* Affiliate disclosure bar background */
 
   /* --- Category Tints & Indicator Dots --- */
   /* Category colors are used only as dots or icon fills. Text on tints stays ink. */
@@ -43,41 +58,57 @@
   --cat-trust-dot: #2B5D7C;
 
   /* --- Radius Scale --- */
-  --radius-btn: 8px;                    /* Standard buttons */
-  --radius-btn-sm: 6px;                 /* Compact buttons */
-  --radius-sm: 14px;                    /* Inputs, small cards */
-  --radius-md: 16px;                    /* Standard cards */
-  --radius-lg: 20px;                    /* Feature cards */
-  --radius-pill: 999px;                 /* Pills, badges, tags */
+  --radius-btn: 8px;
+  /* Standard buttons */
+  --radius-btn-sm: 6px;
+  /* Compact buttons */
+  --radius-sm: 14px;
+  /* Inputs, small cards */
+  --radius-md: 16px;
+  /* Standard cards */
+  --radius-lg: 20px;
+  /* Feature cards */
+  --radius-pill: 999px;
+  /* Pills, badges, tags */
 
   /* --- Typography Scale & Weights --- */
   --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --word-spacing: 10%;
 
-  --font-display-size: clamp(2.7rem, 6vw, 4.2rem); /* Display 56px (+20% -> 67.2px) */
+  --font-display-size: clamp(2.7rem, 6vw, 4.2rem);
+  /* Display 56px (+20% -> 67.2px) */
   --font-display-lh: 1.12;
   --font-display-weight: 800;
 
-  --font-heading-size: clamp(2.1rem, 4.2vw, 3rem); /* Heading 40px (+20% -> 48px) */
+  --font-heading-size: clamp(2.1rem, 4.2vw, 3rem);
+  /* Heading 40px (+20% -> 48px) */
   --font-heading-lh: 1.2;
   --font-heading-weight: 800;
 
-  --font-subheading-size: clamp(1.5rem, 3vw, 1.8rem); /* Subheading 24px (+20% -> 28.8px) */
+  --font-subheading-size: clamp(1.5rem, 3vw, 1.8rem);
+  /* Subheading 24px (+20% -> 28.8px) */
   --font-subheading-lh: 1.3;
   --font-subheading-weight: 700;
 
-  --font-h3-size: 1.5rem;             /* H3 20px (+20% -> 24px) */
+  --font-h3-size: 1.5rem;
+  /* H3 20px (+20% -> 24px) */
   --font-h3-lh: 1.35;
   --font-h3-weight: 700;
 
-  --font-body-lg-size: 1.125rem;        /* Body large 18px */
-  --font-body-lg-lh: 1.6;               /* 28px */
+  --font-body-lg-size: 1.125rem;
+  /* Body large 18px */
+  --font-body-lg-lh: 1.6;
+  /* 28px */
 
-  --font-body-size: 1rem;               /* Body 16px */
-  --font-body-lh: 1.5;                  /* 24px */
+  --font-body-size: 1rem;
+  /* Body 16px */
+  --font-body-lh: 1.5;
+  /* 24px */
 
-  --font-caption-size: 0.875rem;        /* Caption 14px */
-  --font-caption-lh: 1.43;              /* 20px */
+  --font-caption-size: 0.875rem;
+  /* Caption 14px */
+  --font-caption-lh: 1.43;
+  /* 20px */
 
   /* --- Shadows & Elevations --- */
   --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03);
@@ -118,7 +149,9 @@
 }
 
 /* --- Base Reset & Box Sizing --- */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -160,14 +193,36 @@ main,
   width: 100%;
 }
 
-img, svg, video, canvas, audio, iframe, embed, object {
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
 /* Prevent long unbroken words, URLs, and codes from stretching containers */
-h1, h2, h3, h4, h5, h6, p, a, span, li, dt, dd, th, td, blockquote, label {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+li,
+dt,
+dd,
+th,
+td,
+blockquote,
+label {
   overflow-wrap: break-word;
   word-break: break-word;
 }
@@ -207,7 +262,10 @@ a:hover {
   color: var(--color-trust-hover);
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
   color: inherit;
   word-spacing: inherit;
@@ -220,6 +278,7 @@ button {
   background: none;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
