@@ -416,6 +416,7 @@ div.hero-featured-title h2 {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  width: calc(100% + 0.8rem);
 }
 
 .winner-card .card-media-wrap img {
@@ -475,6 +476,11 @@ div.hero-featured-title h2 {
   line-height: 1.45;
   margin-bottom: 1.25rem;
   flex: 1;
+  letter-spacing: -0.04em;
+  letter-spacing: -4%;
+  letter-spacing: calc(var(--letter-spacing, 0%) - 4%);
+  word-spacing: 1%;
+  word-spacing: calc(var(--word-spacing, 10%) - 4%);
 }
 
 /* Methodology Dark Section ("A score you can check, not a vibe") */
@@ -2312,6 +2318,7 @@ div.hero-featured-title h2 {
     border: 1px solid var(--color-border) !important;
     overflow: hidden !important;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
+    width: calc(100% + 0.8rem) !important;
   }
 
   .winner-card .card-media-wrap {
