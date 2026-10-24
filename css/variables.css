@@ -118,7 +118,7 @@
   --shadow-input-focus: 0 0 0 3px rgba(184, 74, 20, 0.18);
 
   /* --- Layout & Spacing --- */
-  --container-max: 1180px;
+  --container-max: 1156px;
   --container-narrow: 800px;
   --container-pad: 0px;
   --transition-speed: 0.2s;

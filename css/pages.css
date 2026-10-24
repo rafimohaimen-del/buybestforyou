@@ -32,6 +32,7 @@
 .page-home section.section-categories {
   padding-top: 5.25rem;
   padding-bottom: 0.25rem;
+  margin-bottom: 2rem;
 }
 
 .page-home section.section-winners {
@@ -371,6 +372,7 @@ div.hero-featured-title h2 {
   gap: 0.5rem;
   font-size: 1.5rem;
   font-weight: 800;
+  line-height: 1.2;
   color: var(--color-ink);
   margin-bottom: 0.5rem;
 }
@@ -380,7 +382,7 @@ div.hero-featured-title h2 {
   font-weight: 600;
   line-height: 1.45;
   color: var(--color-muted);
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   flex: 1;
 }
 
@@ -405,7 +407,7 @@ div.hero-featured-title h2 {
 .winners-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
+  gap: 1.25rem;
   margin-top: 1.5rem;
 }
 
@@ -441,6 +443,8 @@ div.hero-featured-title h2 {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  left: -0.6rem;
 }
 
 .page-home a.btn-full {
@@ -471,20 +475,15 @@ div.hero-featured-title h2 {
 }
 
 .winner-desc {
-  font-size: 0.89375rem; /* 0.8125rem * 1.10 (+10%) */
+  font-size: 0.89375rem;
+  /* 0.8125rem * 1.10 (+10%) */
   color: var(--color-muted);
   line-height: 1.45;
   margin-bottom: 1.25rem;
   flex: 1;
-  letter-spacing: -0.04em;
-  letter-spacing: -4%;
   letter-spacing: calc(var(--letter-spacing, 0%) - 4%);
-  word-spacing: 1%;
   word-spacing: calc(var(--word-spacing, 10%) - 4%);
-  white-space: normal;
   overflow-wrap: break-word;
-  word-wrap: break-word;
-  max-width: 90%;
   max-width: calc(100% / 1.08 - 0.4rem);
 }
 
@@ -502,16 +501,25 @@ div.hero-featured-title h2 {
   align-items: center;
 }
 
+.methodology-info {
+  width: calc(100% + 2.8rem);
+}
+
+.section-methodology .score-breakdown-box {
+  width: calc(100% - 1rem);
+}
+
 .methodology-title {
-  font-size: 2.2rem;
+  font-size: 2.42rem; /* 2.2rem * 1.10 (+10%) */
   font-weight: var(--font-heading-weight);
   line-height: var(--font-heading-lh);
   color: #FFFFFF;
   margin-bottom: 1.25rem;
 }
 
-.methodology-text {
-  font-size: 1.05rem;
+.methodology-text,
+h2.methodology-text {
+  font-size: 1.147125rem; /* 1.2075rem * 0.95 (-5%) */
   line-height: 1.55;
   color: var(--color-on-ink);
   margin-bottom: 1.75rem;
@@ -522,17 +530,19 @@ div.hero-featured-title h2 {
   flex-direction: column;
   gap: 1.25rem;
   margin-bottom: 2.25rem;
+  font-size: 1.265rem; /* 1.1rem * 1.15 (+15%) */
 }
 
 .method-step-row {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
+  font-size: 1.1rem; /* 1rem * 1.10 (+10%) */
 }
 
 .step-num-circle {
-  width: 28px;
-  height: 28px;
+  width: 40.32px; /* 50.4px * 0.80 (-20%) */
+  height: 40.32px; /* 50.4px * 0.80 (-20%) */
   border-radius: 50%;
   background-color: #FFFFFF;
   color: #111827;
@@ -540,19 +550,23 @@ div.hero-featured-title h2 {
   align-items: center;
   justify-content: center;
   font-weight: 800;
-  font-size: 0.875rem;
+  font-size: 1.15rem; /* Increased from 0.875rem */
   flex-shrink: 0;
 }
 
+.step-text {
+  font-size: 1.32825rem; /* 1.155rem * 1.15 (+15%) */
+}
+
 .step-text h4 {
-  font-size: 1.2rem;
+  font-size: 1.38rem; /* 1.2rem * 1.15 (+15%) */
   font-weight: 800;
   color: #FFFFFF;
   margin-bottom: 0.2rem;
 }
 
 .step-text p {
-  font-size: 0.875rem;
+  font-size: 1.00625rem; /* 0.875rem * 1.15 (+15%) */
   color: var(--color-on-ink);
   line-height: 1.4;
 }
@@ -2219,6 +2233,7 @@ div.hero-featured-title h2 {
   .section-categories {
     padding-top: 2.25rem;
     padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
   }
 
   .category-browser-grid {
@@ -2283,7 +2298,7 @@ div.hero-featured-title h2 {
     display: flex !important;
     align-items: center !important;
     gap: 0.45rem !important;
-    line-height: 1.25 !important;
+    line-height: 1 !important;
   }
 
   .cat-browse-title .cat-dot {
@@ -2390,6 +2405,8 @@ div.hero-featured-title h2 {
     width: 90% !important;
     margin-left: auto !important;
     margin-right: auto !important;
+    position: relative !important;
+    left: -0.6rem !important;
     text-align: center !important;
     text-decoration: none !important;
     transition: background-color var(--transition-speed);
@@ -2410,7 +2427,7 @@ div.hero-featured-title h2 {
   }
 
   .methodology-title {
-    font-size: 2.941056rem !important;
+    font-size: 3.2351616rem !important; /* 2.941056rem * 1.10 (+10%) */
     font-weight: 800 !important;
     color: #FFFFFF !important;
     line-height: 1.15 !important;
@@ -2420,7 +2437,7 @@ div.hero-featured-title h2 {
 
   .methodology-text-mobile {
     color: var(--color-on-ink) !important;
-    font-size: 1.2375rem !important;
+    font-size: 1.35196875rem !important; /* 1.423125rem * 0.95 (-5%) */
     line-height: 1.5 !important;
     margin-bottom: 1.75rem !important;
   }
