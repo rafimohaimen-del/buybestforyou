@@ -5,18 +5,27 @@
 /* --- 1. Homepage Styles --- */
 .hero-home {
   padding-top: 5rem;
-  padding-bottom: 4rem;
+  padding-bottom: 4.4rem;
   line-height: 1.5;
 }
 
 .hero-intro {
   position: relative;
-  top: -1rem;
+  top: -1.45rem;
+}
+
+.hero-intro .cat-pill {
+  position: relative;
+  top: 1.5rem;
+  padding-left: 0.475rem;
+  padding-right: 0.475rem;
+  word-spacing: 16%;
+  letter-spacing: 0.5%;
 }
 
 .page-home .trust-bar,
 .page-home .hero-home+section {
-  padding-top: 1.35rem;
+  padding-top: 1.8rem;
   padding-bottom: 1.5rem;
 }
 
@@ -40,6 +49,14 @@
   padding-bottom: 1rem;
 }
 
+.page-home .guide-title,
+.page-home .guide-title a {
+  color: gray;
+  letter-spacing: -0.01em;
+  letter-spacing: -10%;
+  line-height: 1.215;
+}
+
 .page-home .section-bg-subtle.desktop-only {
   padding-top: 5.5rem;
   padding-bottom: 2.5rem;
@@ -55,27 +72,35 @@
   grid-template-columns: 1.08fr 0.92fr;
   gap: 2.75rem;
   align-items: center;
+  position: relative;
+  top: 0.4rem;
 }
 
 .hero-title {
-  font-size: clamp(2.7rem, 5.4vw, 3.6rem);
+  font-size: clamp(2.7rem, 5.4vw, 3.8rem);
   font-weight: 800;
-  line-height: 1.15;
+  line-height: 1.07;
   color: var(--color-ink);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.029em;
   margin-bottom: 1.25rem;
+  position: relative;
+  top: 1.75rem;
 }
 
 .hero-lead {
   font-size: 1.2375rem;
-  line-height: 1.6;
+  line-height: 1.5;
   color: var(--color-muted);
   max-width: 520px;
-  margin-bottom: 1.75rem;
+  margin-bottom: 3.5rem;
+  position: relative;
+  top: 1.75rem;
 }
 
 .hero-search-area {
   margin-bottom: 1.25rem;
+  position: relative;
+  top: 0.3rem;
 }
 
 .hero-search-area .search-bar-unified {
@@ -83,6 +108,11 @@
   width: 100%;
   min-height: 65.66px;
   padding: 0.5375rem 0.35rem 0.5375rem 1.25rem;
+}
+
+.hero-search-area .search-bar-btn {
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
 }
 
 .popular-tags {
@@ -126,6 +156,10 @@
   margin-right: -1rem;
 }
 
+.hero-featured-card .cat-pill {
+  padding-bottom: 0;
+}
+
 .hero-featured-image,
 .hero-featured-img {
   border-radius: var(--radius-sm);
@@ -135,7 +169,7 @@
   width: calc(100% + 8px - 0.3rem);
   height: 14.6775rem;
   margin-top: -6px;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.5rem;
   position: relative;
   background-color: #F9FAFB;
 }
@@ -181,16 +215,20 @@
   outline-offset: 2px;
 }
 
-.hero-featured-title {
-  font-size: 1.62rem;
+.hero-featured-title,
+.hero-featured-title h2,
+div.hero-featured-title h2 {
+  font-size: 1.52rem;
   font-weight: 800;
   color: var(--color-ink);
   margin-bottom: 0.5rem;
   line-height: 1.25;
+  word-spacing: 0;
+  word-spacing: calc(var(--word-spacing, 10%) - 10%);
 }
 
 .hero-featured-desc {
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: var(--color-muted);
   margin-bottom: 1.25rem;
   line-height: 1.5;
@@ -201,6 +239,25 @@
   align-items: center;
   gap: 1rem;
   margin-bottom: 1.25rem;
+}
+
+.hero-featured-score-row .score-badge-circle {
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-featured-score-row .score-badge-circle svg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
 }
 
 /* Trust Points Bar */
@@ -2417,6 +2474,14 @@
   .guide-card-row .guide-title a {
     color: var(--color-ink) !important;
     text-decoration: none !important;
+  }
+
+  .page-home .guide-card-row .guide-title,
+  .page-home .guide-card-row .guide-title a {
+    color: gray !important;
+    letter-spacing: -0.01em !important;
+    letter-spacing: -10% !important;
+    line-height: 1.215 !important;
   }
 
   .guide-card-row .guide-meta {
