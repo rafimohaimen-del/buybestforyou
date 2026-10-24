@@ -289,13 +289,13 @@
 }
 
 .disclosure-text {
-  font-size: 0.8125rem;
+  font-size: 0.8625rem;
   color: var(--color-ink);
 }
 
 .disclosure-link {
   color: var(--color-trust);
-  font-weight: 600;
+  font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 3px;
   margin-left: 0.25rem;

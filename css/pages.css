@@ -307,7 +307,7 @@ div.hero-featured-title h2 {
 .category-browser-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1.2rem;
+  gap: 1.35rem;
   margin-top: 1.5rem;
 }
 
@@ -332,6 +332,7 @@ div.hero-featured-title h2 {
 
 .cat-card-home {
   background-color: var(--cat-home-bg);
+  width: calc(100% + 0.4rem);
 }
 
 .cat-card-electronics {
@@ -358,7 +359,7 @@ div.hero-featured-title h2 {
 }
 
 .cat-browse-body {
-  padding: 1.5rem 1.25rem;
+  padding: 1.1rem 1.4rem;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -417,17 +418,42 @@ div.hero-featured-title h2 {
   flex-direction: column;
 }
 
+.winner-card .card-media-wrap img {
+  height: calc(100% + 0.5rem);
+}
+
 .winner-content {
-  padding: 1.25rem;
+  padding: 0.75rem 1.085rem;
   display: flex;
   flex-direction: column;
   flex: 1;
+  width: calc((100% + 0.4rem) * 1.08);
 }
 
-.winner-title {
+.winner-content .cat-pill {
+  margin-bottom: 0;
+}
+
+.winner-content .btn-primary {
+  padding: 0.7125rem 1.525rem;
+  font-size: 1rem;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-home a.btn-full {
+  width: 90%;
+  font-size: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.winner-title,
+.winner-title a {
   font-size: 1.2rem;
   font-weight: 800;
-  color: var(--color-ink);
+  color: lightgray;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   line-height: 1.35;
@@ -444,7 +470,7 @@ div.hero-featured-title h2 {
 }
 
 .winner-desc {
-  font-size: 0.8125rem;
+  font-size: 0.89375rem; /* 0.8125rem * 1.10 (+10%) */
   color: var(--color-muted);
   line-height: 1.45;
   margin-bottom: 1.25rem;
@@ -2296,7 +2322,7 @@ div.hero-featured-title h2 {
 
   .winner-card .card-media-wrap img {
     width: 100% !important;
-    height: 100% !important;
+    height: calc(100% + 0.5rem) !important;
     object-fit: cover !important;
     display: block !important;
   }
@@ -2314,7 +2340,7 @@ div.hero-featured-title h2 {
     font-size: 0.8125rem !important;
     font-weight: 700 !important;
     color: var(--color-ink) !important;
-    margin-bottom: 0.35rem !important;
+    margin-bottom: 0 !important;
     display: inline-flex !important;
     align-items: center !important;
     gap: 0.45rem !important;
@@ -2330,14 +2356,14 @@ div.hero-featured-title h2 {
   .winner-title {
     font-size: 2.28528rem !important;
     font-weight: 800 !important;
-    color: var(--color-ink) !important;
+    color: lightgray !important;
     margin-top: 0.15rem !important;
     margin-bottom: 1rem !important;
     line-height: 1.3 !important;
   }
 
   .winner-title a {
-    color: var(--color-ink) !important;
+    color: lightgray !important;
     text-decoration: none !important;
   }
 
@@ -2346,10 +2372,12 @@ div.hero-featured-title h2 {
     color: #FFFFFF !important;
     border-radius: 8px !important;
     font-weight: 700 !important;
-    font-size: 1.125rem !important;
-    padding: 0.85rem !important;
+    font-size: 1rem !important;
+    padding: 0.75rem !important;
     display: block !important;
-    width: 100% !important;
+    width: 90% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
     text-align: center !important;
     text-decoration: none !important;
     transition: background-color var(--transition-speed);
