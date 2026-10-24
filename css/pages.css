@@ -481,6 +481,11 @@ div.hero-featured-title h2 {
   letter-spacing: calc(var(--letter-spacing, 0%) - 4%);
   word-spacing: 1%;
   word-spacing: calc(var(--word-spacing, 10%) - 4%);
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  max-width: 90%;
+  max-width: calc(100% / 1.08 - 0.4rem);
 }
 
 /* Methodology Dark Section ("A score you can check, not a vibe") */
