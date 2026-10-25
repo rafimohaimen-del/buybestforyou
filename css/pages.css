@@ -37,7 +37,7 @@
 
 .page-home section.section-winners {
   padding-top: 3.25rem;
-  padding-bottom: 4.875rem;
+  padding-bottom: 5.975rem;
 }
 
 .page-home .section-methodology {
@@ -510,7 +510,8 @@ div.hero-featured-title h2 {
 }
 
 .methodology-title {
-  font-size: 2.42rem; /* 2.2rem * 1.10 (+10%) */
+  font-size: 2.42rem;
+  /* 2.2rem * 1.10 (+10%) */
   font-weight: var(--font-heading-weight);
   line-height: var(--font-heading-lh);
   color: #FFFFFF;
@@ -519,7 +520,8 @@ div.hero-featured-title h2 {
 
 .methodology-text,
 h2.methodology-text {
-  font-size: 1.147125rem; /* 1.2075rem * 0.95 (-5%) */
+  font-size: 1.147125rem;
+  /* 1.2075rem * 0.95 (-5%) */
   line-height: 1.55;
   color: var(--color-on-ink);
   margin-bottom: 1.75rem;
@@ -530,19 +532,23 @@ h2.methodology-text {
   flex-direction: column;
   gap: 1.25rem;
   margin-bottom: 2.25rem;
-  font-size: 1.265rem; /* 1.1rem * 1.15 (+15%) */
+  font-size: 1.265rem;
+  /* 1.1rem * 1.15 (+15%) */
 }
 
 .method-step-row {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
-  font-size: 1.1rem; /* 1rem * 1.10 (+10%) */
+  font-size: 1.1rem;
+  /* 1rem * 1.10 (+10%) */
 }
 
 .step-num-circle {
-  width: 40.32px; /* 50.4px * 0.80 (-20%) */
-  height: 40.32px; /* 50.4px * 0.80 (-20%) */
+  width: 40.32px;
+  /* 50.4px * 0.80 (-20%) */
+  height: 40.32px;
+  /* 50.4px * 0.80 (-20%) */
   border-radius: 50%;
   background-color: #FFFFFF;
   color: #111827;
@@ -550,23 +556,27 @@ h2.methodology-text {
   align-items: center;
   justify-content: center;
   font-weight: 800;
-  font-size: 1.15rem; /* Increased from 0.875rem */
+  font-size: 1.15rem;
+  /* Increased from 0.875rem */
   flex-shrink: 0;
 }
 
 .step-text {
-  font-size: 1.32825rem; /* 1.155rem * 1.15 (+15%) */
+  font-size: 1.32825rem;
+  /* 1.155rem * 1.15 (+15%) */
 }
 
 .step-text h4 {
-  font-size: 1.38rem; /* 1.2rem * 1.15 (+15%) */
+  font-size: 1.38rem;
+  /* 1.2rem * 1.15 (+15%) */
   font-weight: 800;
   color: #FFFFFF;
   margin-bottom: 0.2rem;
 }
 
 .step-text p {
-  font-size: 1.00625rem; /* 0.875rem * 1.15 (+15%) */
+  font-size: 1.00625rem;
+  /* 0.875rem * 1.15 (+15%) */
   color: var(--color-on-ink);
   line-height: 1.4;
 }
@@ -2427,7 +2437,8 @@ h2.methodology-text {
   }
 
   .methodology-title {
-    font-size: 3.2351616rem !important; /* 2.941056rem * 1.10 (+10%) */
+    font-size: 3.2351616rem !important;
+    /* 2.941056rem * 1.10 (+10%) */
     font-weight: 800 !important;
     color: #FFFFFF !important;
     line-height: 1.15 !important;
@@ -2437,7 +2448,8 @@ h2.methodology-text {
 
   .methodology-text-mobile {
     color: var(--color-on-ink) !important;
-    font-size: 1.35196875rem !important; /* 1.423125rem * 0.95 (-5%) */
+    font-size: 1.35196875rem !important;
+    /* 1.423125rem * 0.95 (-5%) */
     line-height: 1.5 !important;
     margin-bottom: 1.75rem !important;
   }
