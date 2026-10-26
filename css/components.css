@@ -540,8 +540,8 @@
 .metric-header {
   display: flex;
   justify-content: space-between;
-  font-size: 0.875rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 500;
   color: var(--color-ink);
   margin-bottom: 0.35rem;
 }
