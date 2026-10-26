@@ -337,7 +337,7 @@
 }
 
 .footer-disclosure-text {
-  font-size: 0.8125rem;
+  font-size: 1.025rem;
   line-height: 1.5;
   color: var(--color-on-ink);
   margin-bottom: 0.75rem;
@@ -348,7 +348,7 @@
   align-items: center;
   gap: 0.35rem;
   color: #FFFFFF;
-  font-size: 0.8125rem;
+  font-size: 1rem;
   font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -375,7 +375,8 @@
 
 .footer-nav-link {
   color: var(--color-on-ink);
-  font-size: 0.8125rem;
+  font-size: 0.975rem;
+  font-weight: 500;
   transition: color var(--transition-speed);
 }
 
