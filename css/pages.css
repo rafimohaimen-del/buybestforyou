@@ -42,7 +42,7 @@
 
 .page-home .section-methodology {
   padding-top: 6.25rem;
-  padding-bottom: 3.25rem;
+  padding-bottom: 4.25rem;
 }
 
 .page-home .section-latest-guides {
@@ -479,7 +479,6 @@ div.hero-featured-title h2 {
   /* 0.8125rem * 1.10 (+10%) */
   color: var(--color-muted);
   line-height: 1.45;
-  margin-bottom: 1.25rem;
   flex: 1;
   letter-spacing: calc(var(--letter-spacing, 0%) - 4%);
   word-spacing: calc(var(--word-spacing, 10%) - 4%);
@@ -634,7 +633,7 @@ h2.methodology-text {
 }
 
 .guide-body {
-  padding: 1.25rem;
+  padding: 0.25rem;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -661,7 +660,7 @@ h2.methodology-text {
   font-size: 0.75rem;
   color: var(--color-muted);
   margin-top: auto;
-  padding-top: 0.75rem;
+  padding-top: 0.25rem;
 }
 
 /* Authors / Editors Grid */
